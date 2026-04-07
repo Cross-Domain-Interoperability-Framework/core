@@ -6,9 +6,10 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://example.com/99152/URIforDescribedResource",
-  "@type": ["schema:ImageObject"],
+  "@type": ["schema:Dataset", "schema:ImageObject"],
   "schema:name": "Picture of analytical setup",
   "schema:description": "Description of what is in the picture, where and why taken. In this example, the described resource is a Digital Object, so the resource metadata includes a URL that gets the object.",
+  "schema:identifier": "https://example.com/99152/URIforDescribedResource",
   "schema:license": ["https://joesphotostudio.org/license.txt"],
   "schema:creator": {
     "@list": [

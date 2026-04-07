@@ -33,6 +33,7 @@
       "schema:contentUrl": "https://example.org/datasets/1234567890.csv",
       "schema:description": "A comma delimited text distribution following W3C CSV on the Web conventions.",
       "spdx:checksum": {
+        "@type": ["spdx:Checksum"],
         "spdx:algorithm": "spdx:checksumAlgorithm_md5",
         "spdx:checksumValue": "0BAA1B8"
       },
@@ -48,6 +49,7 @@
       "schema:contentUrl": "https://example.org/datasets/1234567890.rdb",
       "schema:description": "A text distribution using USGS RDB conventions.",
       "spdx:checksum": {
+        "@type": ["spdx:Checksum"],
         "spdx:algorithm": "spdx:checksumAlgorithm_md5",
         "spdx:checksumValue": "0F119B7"
       },

@@ -6,7 +6,7 @@
     "prov": "http://www.w3.org/ns/prov#"
   },
   "@id": "https://example.org/id/XYZ",
-  "@type": ["schema:Map"],
+  "@type": ["schema:Dataset", "schema:CreativeWork"],
   "schema:name": "Name or title of the document",
   "schema:description": "Description of the map to aid in searching",
   "schema:url": "https://www.sample-data-repository.org/creativework/map.pdf",
