@@ -379,6 +379,7 @@
         "schema:propertyID": "https://example.org/catalog-registry",
         "schema:value": "ocean-data-catalog-001"
       }
-    }
+    },
+    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating a complete CDIF core profile record with all optional properties. Based on a fictional Argo float ocean temperature dataset."
   }
 }

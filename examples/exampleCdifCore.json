@@ -68,6 +68,7 @@
       ],
       "schema:name": "Global Wildlife Aggregator",
       "schema:url": "http://example.com/wildlifecatalog"
-    }
+    },
+    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating standard CDIF core profile metadata for a bathymetry dataset."
   }
 }
