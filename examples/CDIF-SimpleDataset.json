@@ -1,35 +1,43 @@
 {
-  "@context": [
-    "https://schema.org",
-    {
-      "dcterms": "http://purl.org/dc/terms/",
-      "ex": "https://example.com/99152/"
-    }
-  ],
-  "@id": "ex:URIforTheMetadata",
-  "@type": "DigitalDocument",
-  "dateModified": "2017-05-23",
-  "maintainer": {
-    "@type": "Organization",
-    "name": "Joe's photo studio",
-    "email": "metadata@joesphotostudio.org"
+  "@context": {
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
   },
-  "dcterms:conformsTo": "ex:cdif-metadataSpec",
-  "about": {
-    "@id": "ex:URIforDescribedResource",
-    "@type": "ImageObject",
-    "name": "Picture of analytical setup",
-    "description": "Description of what's in the picture, where and why taken.  note that in this example, the described resource is  a Digital Object (not a a physical object or abstract object with one or more representations implemented as Digital Objects), so the resource metadata includes a URL that gets the object.",
-    "license": "https://joesphotostudio.org/license.txt",
-    "creator": "nil:unknown",
-    "datePublished": "2012-07-18",
-    "encodingFormat": "image/tif",
-    "url": "https://repository.org/images/2423757.tif",
-    "subjectOf": {
-      "@id": "ex:URIforTheMetadata"
-    }
+  "@id": "https://example.com/99152/URIforDescribedResource",
+  "@type": ["schema:ImageObject"],
+  "schema:name": "Picture of analytical setup",
+  "schema:description": "Description of what is in the picture, where and why taken. In this example, the described resource is a Digital Object, so the resource metadata includes a URL that gets the object.",
+  "schema:license": ["https://joesphotostudio.org/license.txt"],
+  "schema:creator": {
+    "@list": [
+      {
+        "@type": ["schema:Person"],
+        "schema:name": "Unknown creator"
+      }
+    ]
   },
+  "schema:dateModified": "2012-07-18",
+  "schema:datePublished": "2012-07-18",
+  "schema:encodingFormat": ["image/tiff"],
+  "schema:url": "https://repository.org/images/2423757.tif",
   "schema:subjectOf": {
+    "@id": "https://example.com/99152/URIforTheMetadata",
+    "@type": ["schema:Dataset"],
+    "schema:additionalType": ["dcat:CatalogRecord"],
+    "schema:about": {
+      "@id": "https://example.com/99152/URIforDescribedResource"
+    },
+    "schema:dateModified": "2017-05-23",
+    "schema:maintainer": {
+      "@type": ["schema:Organization"],
+      "schema:name": "Joe's photo studio",
+      "schema:email": "metadata@joesphotostudio.org"
+    },
+    "dcterms:conformsTo": [
+      {"@id": "https://w3id.org/cdif/core/1.0"}
+    ],
     "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating simple CDIF core metadata for an ImageObject with creator and license."
   }
 }

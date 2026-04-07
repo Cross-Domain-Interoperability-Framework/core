@@ -1,45 +1,50 @@
 {
   "@context": {
-    "@vocab": "https://schema.org/"
+    "schema": "http://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#"
   },
-  "@type": "Map",
   "@id": "https://example.org/id/XYZ",
-  "name": "Name or title of the document",
-  "description": "Description of the map to aid in searching",
-  "url": "https://www.sample-data-repository.org/creativework/map.pdf",
-  "identifier": {
+  "@type": ["schema:Map"],
+  "schema:name": "Name or title of the document",
+  "schema:description": "Description of the map to aid in searching",
+  "schema:url": "https://www.sample-data-repository.org/creativework/map.pdf",
+  "schema:identifier": {
     "@id": "https://doi.org/10.5066/F7VX0DMQ",
-    "@type": "PropertyValue",
-    "propertyID": "https://registry.identifiers.org/registry/doi",
-    "value": "doi:10.5066/F7VX0DMQ",
-    "url": "https://doi.org/10.5066/F7VX0DMQ"
+    "@type": ["schema:PropertyValue"],
+    "schema:propertyID": "https://registry.identifiers.org/registry/doi",
+    "schema:value": "doi:10.5066/F7VX0DMQ",
+    "schema:url": "https://doi.org/10.5066/F7VX0DMQ"
   },
-  "schemaVersion": "https://book.oceaninfohub.org/thematics/dataset/index.html",
-  "publishingPrinciples": {
-    "@type": "CreativeWork",
-    "url": "https://raw.githubusercontent.com/iodepo/odis-arch/schema-dev-df/code/SHACL/oih_search.ttl",
-    "name": "Ocean InfoHub general validation",
-    "encodingFormat": "text/turtle",
-    "schemaVersion": "http://www.w3.org/ns/shacl#",
-    "description": "A link to the general OIH validation SHACL"
-  },
-  "keywords": [
+  "schema:license": ["https://creativecommons.org/licenses/by/4.0/"],
+  "schema:dateModified": "2025-01-01",
+  "schema:keywords": [
     {
       "@id": "http://purl.org/dc/dcmitype/Image",
-      "@type": "DefinedTerm",
-      "inDefinedTermSet": "http://purl.org/dc/terms/DCMIType",
-      "termCode": "Image",
-      "name": "Image"
+      "@type": ["schema:DefinedTerm"],
+      "schema:inDefinedTermSet": "http://purl.org/dc/terms/DCMIType",
+      "schema:termCode": "Image",
+      "schema:name": "Image"
     },
     "Region X",
     {
       "@id": "https://www.wikidata.org/wiki/Q350134",
-      "@type": "URL",
-      "url": "https://www.wikidata.org/wiki/Q350134",
-      "name": "North Atlantic Ocean"
+      "@type": ["schema:DefinedTerm"],
+      "schema:url": "https://www.wikidata.org/wiki/Q350134",
+      "schema:name": "North Atlantic Ocean"
     }
   ],
   "schema:subjectOf": {
+    "@id": "https://example.org/id/XYZ#metadata",
+    "@type": ["schema:Dataset"],
+    "schema:additionalType": ["dcat:CatalogRecord"],
+    "schema:about": {
+      "@id": "https://example.org/id/XYZ"
+    },
+    "dcterms:conformsTo": [
+      {"@id": "https://w3id.org/cdif/core/1.0"}
+    ],
     "schema:description": "Adapted from an ODIS (Ocean Data and Information System) schema.org JSON-LD demonstration record. Converted to CDIF core profile: property names prefixed with schema: namespace, @context set to CDIF prefix declarations, @type values normalized to arrays."
   }
 }

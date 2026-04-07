@@ -6,7 +6,7 @@
     "dcat": "http://www.w3.org/ns/dcat#",
     "prov": "http://www.w3.org/ns/prov#"
   },
-  "@id": "ark:/99152/URIforTheDataset",
+  "@id": "https://fedeo.ceos.org/collections/series/items/urn:eop:DLR:EOWEB:Water_Parameter_North_Sea",
   "@type": [
     "schema:Dataset"
   ],
@@ -115,7 +115,7 @@
     }
   ],
   "schema:subjectOf": {
-    "@id": "metadata:ark:/99152/URIforTheMetadataRecord",
+    "@id": "https://fedeo.ceos.org/collections/series/items/urn:eop:DLR:EOWEB:Water_Parameter_North_Sea#metadata",
     "@type": [
       "schema:Dataset"
     ],
@@ -124,7 +124,7 @@
     ],
     "schema:dateModified": "2014-02-23",
     "schema:about": {
-      "@id": "ark:/99152/URIforTheDataset"
+      "@id": "https://fedeo.ceos.org/collections/series/items/urn:eop:DLR:EOWEB:Water_Parameter_North_Sea"
     },
     "dcterms:conformsTo": [
       {
