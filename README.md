@@ -39,11 +39,36 @@ Sources include:
 
 All examples pass cdifCore JSON Schema validation.
 
+## JSON-LD Framing and Validation
+
+**`FrameAndValidate.py`** frames a JSON-LD document against the CDIF Core schema and optionally validates it:
+
+```bash
+# Frame and validate
+python FrameAndValidate.py examples/exampleCdifCoreMinimal.json --validate
+
+# Frame and save output
+python FrameAndValidate.py examples/exampleCdifCoreMinimal.json -o framed.json
+
+# Use a different schema
+python FrameAndValidate.py input.jsonld --validate --schema my-schema.json
+```
+
+The script uses **`cdifCore-frame.jsonld`** to frame JSON-LD documents into the expected property structure. Context prefixes from the input document are automatically merged into the frame, so domain-specific prefixes (e.g. `ada:`, `xas:`) work without being pre-declared in the frame.
+
+**Requirements:** `pyld`, `jsonschema` (`pip install pyld jsonschema`)
+
+## SHACL Validation
+
+**`rules.shacl`** contains SHACL shapes for validating CDIF Core instances. This file is copied from [`metadataBuildingBlocks/_sources/cdifProperties/cdifCore/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) and should be updated whenever the source changes.
+
 ## Repository structure
 
 ```
 ├── CDIFCoreClasses.md              Classes and properties documentation
 ├── cdifCoreStructuredSchema.json   JSON Schema for validation
+├── cdifCore-frame.jsonld           JSON-LD frame for document framing
+├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
 ├── rules.shacl                     SHACL validation shapes (synced from metadataBuildingBlocks)
 ├── examples/                       40+ validated Core-only JSON-LD examples
 ├── ODIS/                           Archived ODIS type-specific templates and examples

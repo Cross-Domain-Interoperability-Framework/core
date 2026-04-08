@@ -249,6 +249,28 @@ def frame_cdif_document(doc_path, frame_path=None):
     else:
         frame = FRAME_TEMPLATE
 
+    # Merge contexts bidirectionally so both expansion and compaction work
+    # with all prefixes from either source:
+    # 1. Frame prefixes → document context: ensures prefixed terms in the
+    #    document (e.g. spdx:checksum) expand to full IRIs even if the
+    #    document's own context is incomplete.
+    # 2. Document prefixes → frame context: ensures domain-specific prefixes
+    #    (e.g. ada:, xas:) compact correctly without requiring every possible
+    #    prefix in the frame.
+    if frame_path and isinstance(frame, dict) and '@context' in frame:
+        doc_ctx = doc.get('@context', {})
+        if isinstance(doc_ctx, dict):
+            frame_ctx = frame['@context']
+            # Frame → document (for expansion)
+            for k, v in frame_ctx.items():
+                if isinstance(v, str) and k not in doc_ctx:
+                    doc_ctx[k] = v
+            doc['@context'] = doc_ctx
+            # Document → frame (for compaction)
+            for k, v in doc_ctx.items():
+                if isinstance(v, str) and k not in frame_ctx:
+                    frame_ctx[k] = v
+
     # Step 1: Expand the document (resolves all prefixes to full IRIs)
     print("Expanding document...")
     expanded = jsonld.expand(doc)
