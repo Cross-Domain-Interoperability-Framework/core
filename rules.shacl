@@ -152,7 +152,7 @@ cdifd:keywordsProperty
 
 cdifd:CDIFCatalogRecordShape
     a sh:NodeShape ;
-    # only apply to CatalogRecord nodes (subjectOf metadata records), not root datasets
+    # only apply to dataset nodes that are 'about' a dataset node 
 	sh:target [
 	  a sh:SPARQLTarget ;
         sh:select  """
@@ -160,8 +160,7 @@ cdifd:CDIFCatalogRecordShape
             SELECT ?this
             WHERE {
             ?this a schema:Dataset ;
-             schema:about ?parent ;
-             schema:additionalType "dcat:CatalogRecord" .
+             schema:about ?parent.
             }
         """;
 	] ;
