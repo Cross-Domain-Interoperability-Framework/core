@@ -18,9 +18,9 @@ This profile applies to description of resources that can be described using the
 
 #### Required Properties from cdif Core profile
 
-**id** — **Required** (string) This is an identifier for this node in an rdf graph. JSON-LD key is @id.
+**@id** — **Required** (string) This is an identifier for this node in an rdf graph. JSON-LD key is @id.
 
-**type** — **Required – "Dataset", Repeatable** (string.uri) The type property specifies the rdf:type classification. For this implementation, the type is represented with the JSON-LD @type property, and must include 'Dataset'. JSON-LD key is @type. Type assertions here should be understood to imply the usage of properties associated with the identified type, whether from schema.org or other vocabularies that might define the type.
+**@type** — **Required – "Dataset", Repeatable** (string.uri) The type property specifies the rdf:type classification. For this implementation, the type is represented with the JSON-LD @type property, and must include 'Dataset'. JSON-LD key is @type. Type assertions here should be understood to imply the usage of properties associated with the identified type, whether from schema.org or other vocabularies that might define the type.
 
 **name** — **Required** (string). A descriptive name of a dataset (e.g., 'Snow depth in Northern Hemisphere'). The name should uniquely identify the described resource for human use, in the scope of the metadata catalog containing this metadata record. Schema.org property, in namepace 'http://schema.org/'.
 
@@ -82,9 +82,9 @@ CHOICE at least one of two options:
 
 file-based access to a resource via URL; the DataDownload object provides a link to get the resource content, along with information about the serialization format and conventions used.
 
-**id** — Optional (string:uri). Graph node identifiers are only necessary if the node content will be referenced in other places
+**@id** — Optional (string:uri). Graph node identifiers are only necessary if the node content will be referenced in other places
 
-**type** — **Required – 'DataDownload', other types optional**(string.uri) This is the rdf:type.
+**@type** — **Required – 'DataDownload', other types optional**(string.uri) This is the rdf:type.
 
 **contentUrl** — **Required**(string.uri). Expected to be an http uri that will directly GET the content of the resource described by this metadata record, in the format specified by the encodingFormat property, and conforming to any specifications identified in the dcterms:conformsTo property.
 
@@ -114,7 +114,7 @@ Provides information to request data through a web accessible service endpoint. 
 
 ### Action
 
-**type** — **Required, Repeatable** (string.uri) The rdf type default is 'Action', but any of these schema.org actions will validate: {Action, AssessAction, ConsumeAction, ControlAction, CreateAction, DeleteAction, FindAction, InteractAction, MoveAction, PlayAction, SearchAction, TransferAction, UpdateAction}
+**@type** — **Required, Repeatable** (string.uri) The rdf type default is 'Action', but any of these schema.org actions will validate: {Action, AssessAction, ConsumeAction, ControlAction, CreateAction, DeleteAction, FindAction, InteractAction, MoveAction, PlayAction, SearchAction, TransferAction, UpdateAction}
 
 **name** — **Required**(string) text label for the action
 
@@ -130,9 +130,9 @@ Provides information to request data through a web accessible service endpoint. 
 
 Object representing a person.
 
-**id** — Optional(string.uri) Identifier for this graph node. Useful to reference this Person using object references if they appear more that once in the metadata record.
+**@id** — Optional(string.uri) Identifier for this graph node. Useful to reference this Person using object references if they appear more that once in the metadata record.
 
-**type** — **Required – 'Person', Repeatable** (string.uri) rdf:type for this JSON-LD object.
+**@type** — **Required – 'Person', Repeatable** (string.uri) rdf:type for this JSON-LD object.
 
 **name** — **Required if no identifier**(string) Label for person that is meaningful for human users, should format consistently. Recommend 'Family Name, Given Name' format.
 
@@ -150,9 +150,9 @@ Object representing a person.
 
 ###  Organization
 
-**id** — Optional(string.uri) Identifier for this graph node. Useful to reference this Organization using object references if they appear more that once in the metadata record.
+**@id** — Optional(string.uri) Identifier for this graph node. Useful to reference this Organization using object references if they appear more that once in the metadata record.
 
-**type** — **Required – 'Organization', Repeatable**(string.uri) rdf:type, list must include Organization, but other schema.org types can be added for more precision: FundingAgency, Consortium, Corporation, EducationalOrganization, FundingScheme, GovernmentOrganization, NGO, Project, ResearchOrganization, defined by enumeration in the schema.
+**@type** — **Required – 'Organization', Repeatable**(string.uri) rdf:type, list must include Organization, but other schema.org types can be added for more precision: FundingAgency, Consortium, Corporation, EducationalOrganization, FundingScheme, GovernmentOrganization, NGO, Project, ResearchOrganization, defined by enumeration in the schema.
 
 **name** — **Required if no identifier**(string) Label for the Organization
 
@@ -170,7 +170,7 @@ Object representing a person.
 
 Information about how to communicate with a person or organization. CDIF only includes e-mail in its schema.
 
-**type** — **Required – 'ContactPoint', Repeatable** (string.uri)
+**@type** — **Required – 'ContactPoint', Repeatable** (string.uri)
 
 **email** — **Required**(string) Property is required if a contactPoint property is included. Use missing@example.org if e-mail address is not available. Recommend using position-based contact point because people move around.
 
@@ -178,7 +178,7 @@ Information about how to communicate with a person or organization. CDIF only in
 
 For more granularity on how an agent contributed to a resource, use schema:Role. The schema.org documentation does not state that the Role type is an expected data type for the contributor property, but that is addressed in this blog post (http://blog.schema.org/2014/06/introducing-role.html). see also [ESIPfed Science on Schema.org roles of people note](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#roles-of-people).
 
-**type** — **Required -- 'Role', Repeatable** (string.uri) rdf:type
+**@type** — **Required -- 'Role', Repeatable** (string.uri) rdf:type
 
 **roleName** — **Required**(string, [DefinedTerm](#defined-term)) term that specifies the relationship between the contributor and the described resource.
 
@@ -186,7 +186,7 @@ For more granularity on how an agent contributed to a resource, use schema:Role.
 
 ### MonetaryGrant
 
-**type** — **Required -- 'MonetaryGrant', Repeatable**(string.uri)
+**@type** — **Required -- 'MonetaryGrant', Repeatable**(string.uri)
 
 CHOICE (at least one of identifier, name, or funder
 
@@ -202,9 +202,9 @@ CHOICE (at least one of identifier, name, or funder
 
 This is the class used to provide information about the metadata record itself.
 
-**id** — **Required**(string.uri) Identifier for the metadata record.
+**@id** — **Required**(string.uri) Identifier for the metadata record.
 
-**type** — **Required – "Dataset", Repeatable**(string.uri)
+**@type** — **Required – "Dataset", Repeatable**(string.uri)
 
 **additionalType** — **Required – "dcat:CatalogRecord", Repeatable** (string)
 
@@ -224,9 +224,9 @@ This is the class used to provide information about the metadata record itself.
 
 An accessible collection of data. The data might be metadata (about other resources) or datasets.
 
-**type** — **Required – 'DataCatalog', Repeatable** (string.uri)
+**@type** — **Required – 'DataCatalog', Repeatable** (string.uri)
 
-**id** — Optional(string.uri) identifier for graph node.
+**@id** — Optional(string.uri) identifier for graph node.
 
 **name** — Optional (string) Label for the data catalog.
 
@@ -236,7 +236,7 @@ An accessible collection of data. The data might be metadata (about other resour
 
 ### Defined Term
 
-**type** — **Required – 'DefinedTerm', Repeatable**(string.uri)
+**@type** — **Required – 'DefinedTerm', Repeatable**(string.uri)
 
 **name** — **Required if no identifier or termCode**(string) label for the term
 
@@ -250,7 +250,7 @@ An accessible collection of data. The data might be metadata (about other resour
 
 ### PropertyValue-(identifier)
 
-**type** — **Required – 'PropertyValue', Repeatable**(string.uri)
+**@type** — **Required – 'PropertyValue', Repeatable**(string.uri)
 
 **value** — **Required if no url**(string) the identifier string. E.g. 10.5066/F7VX0DMQ
 
@@ -260,7 +260,7 @@ An accessible collection of data. The data might be metadata (about other resour
 
 ### Labeled Link
 
-**type** — **Required – 'CreativeWork', Repeatable**(string.uri)
+**@type** — **Required – 'CreativeWork', Repeatable**(string.uri)
 
 **url** — **Required** (string:uri) URL for web location to GET the resource
 
@@ -278,7 +278,7 @@ An accessible collection of data. The data might be metadata (about other resour
 
 This is the type used for links that have an associated semantic conveyed by the linkRelationship.
 
-**type** — **Required – 'LinkRole, Repeatable**(string.uri)
+**@type** — **Required – 'LinkRole, Repeatable**(string.uri)
 
 **linkRelationship** — **Required**(string or [DefinedTerm](#defined-term)) Term that specifies the relationship between the source and target of the link.
 
@@ -288,7 +288,7 @@ This is the type used for links that have an associated semantic conveyed by the
 
 Use to document the URL that is the target for invoking an action, or that is the target object of a link relationship.
 
-**type** — **Required – "EntryPoint", Repeatable**(string. Uri)
+**@type** — **Required – "EntryPoint", Repeatable**(string. Uri)
 
 **encodingFormat** — Optional (string**,** MIME TYPE**)**
 
@@ -300,7 +300,7 @@ Use to document the URL that is the target for invoking an action, or that is th
 
 Description of the kind of value expected for a parameter value.
 
-**type** — **Required – 'PropertyValueSpecification', repeatable**
+**@type** — **Required – 'PropertyValueSpecification', repeatable**
 
 **valueName** — **Required** (string). This will be used to match the specification to parameters in a template string used to construct a query.
 
