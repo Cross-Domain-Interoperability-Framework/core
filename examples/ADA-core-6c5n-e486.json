@@ -76,7 +76,7 @@
         ],
         "schema:alternateName": "CIS"
       },
-      "schema:mainEntity": [
+      "schema:object": [
         {
           "@type": [
             "schema:Thing",

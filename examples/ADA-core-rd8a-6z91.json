@@ -102,7 +102,7 @@
         ],
         "schema:alternateName": "NU"
       },
-      "schema:mainEntity": [
+      "schema:object": [
         {
           "@type": [
             "schema:Thing",

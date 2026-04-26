@@ -112,7 +112,7 @@
         ],
         "schema:alternateName": "LLNL"
       },
-      "schema:mainEntity": [
+      "schema:object": [
         {
           "@type": [
             "schema:Thing",

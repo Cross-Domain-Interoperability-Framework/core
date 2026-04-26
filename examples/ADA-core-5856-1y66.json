@@ -76,7 +76,7 @@
         ],
         "schema:alternateName": "UAZ"
       },
-      "schema:mainEntity": [
+      "schema:object": [
         {
           "@type": [
             "schema:Thing",
