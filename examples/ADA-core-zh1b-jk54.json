@@ -102,7 +102,7 @@
         ],
         "schema:alternateName": "CUWA"
       },
-      "schema:mainEntity": [
+      "schema:object": [
         {
           "@type": [
             "schema:Thing",

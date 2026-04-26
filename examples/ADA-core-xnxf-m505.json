@@ -85,7 +85,7 @@
         ],
         "schema:alternateName": "NMNH"
       },
-      "schema:mainEntity": [
+      "schema:object": [
         {
           "@type": [
             "schema:Thing",
