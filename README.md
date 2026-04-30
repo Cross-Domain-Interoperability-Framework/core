@@ -6,7 +6,7 @@ Core interoperability specification for CDIF (Cross-Domain Interoperability Fram
 
 - **[CDIFCoreClasses.md](CDIFCoreClasses.md)** — Complete documentation of all classes and properties for the CDIF Core profile, including required/optional properties, data types, and JSON-LD implementation guidance.
 - **[cdifCoreStructuredSchema.json](cdifCoreStructuredSchema.json)** — JSON Schema (Draft 2020-12) for validating CDIF Core profile instances. Generated from the [metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks) source schemas.
-- **[rules.shacl](rules.shacl)** — SHACL validation shapes for CDIF Core. Copied from [`metadataBuildingBlocks/_sources/cdifProperties/cdifCore/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) and should be updated whenever the source changes.
+- **[coreRules.shacl](coreRules.shacl)** — SHACL validation shapes for CDIF Core. Copied from [`metadataBuildingBlocks/_sources/cdifProperties/cdifCore/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) and should be updated whenever the source changes.
 
 ## Required properties
 
@@ -60,7 +60,7 @@ The script uses **`cdifCore-frame.jsonld`** to frame JSON-LD documents into the 
 
 ## SHACL Validation
 
-**`rules.shacl`** contains SHACL shapes for validating CDIF Core instances. This file is copied from [`metadataBuildingBlocks/_sources/cdifProperties/cdifCore/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) and should be updated whenever the source changes.
+**`coreRules.shacl`** contains SHACL shapes for validating CDIF Core instances. This file is copied from [`metadataBuildingBlocks/_sources/cdifProperties/cdifCore/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) and should be updated whenever the source changes.
 
 ## Repository structure
 
@@ -69,7 +69,7 @@ The script uses **`cdifCore-frame.jsonld`** to frame JSON-LD documents into the 
 ├── cdifCoreStructuredSchema.json   JSON Schema for validation
 ├── cdifCore-frame.jsonld           JSON-LD frame for document framing
 ├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
-├── rules.shacl                     SHACL validation shapes (synced from metadataBuildingBlocks)
+├── coreRules.shacl                 SHACL validation shapes (synced from metadataBuildingBlocks)
 ├── examples/                       40+ validated Core-only JSON-LD examples
 ├── ODIS/                           Archived ODIS type-specific templates and examples
 └── LICENSE
