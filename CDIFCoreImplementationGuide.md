@@ -42,7 +42,7 @@ This profile applies to description of resources that can be described using the
 
 **Content:** string
 
-**Description:** A descriptive name of a dataset (e.g., 'Snow depth in Northern Hemisphere'). The name should uniquely identify the described resource for human use, in the scope of the metadata catalog containing this metadata record. Schema.org property, in namepace 'http://schema.org/'.
+**Description:** A descriptive name of a dataset (e.g., 'Snow depth in Northern Hemisphere'). The name should uniquely identify the described resource for human use, in the scope of the metadata catalog containing this metadata record. Schema.org property, in namespace 'http://schema.org/'.
 
 
 #### [**identifier**]{.underline}
@@ -51,7 +51,7 @@ This profile applies to description of resources that can be described using the
 
 **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
 
-**Description:** The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namepace 'http://schema.org/'.
+**Description:** The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namespace 'http://schema.org/'.
 
 
 #### [**dateModified**]{.underline}
@@ -91,7 +91,7 @@ CHOICE at least one of two options:
 
 **Content:** string.uri
 
-**Description:** Web Location of a page describing the dataset (landing page), typically providing links or instructions to get the actual resource content; analogous to dcat:accessURL. If a direct link is available to get the data, put in distribution/DataDownload/contentUrl
+**Description:** Web Location of a page describing the dataset (landing page), typically providing links or instructions to get the actual resource content; analogous to dcat:landingPage. If a direct link is available to get the data, put in distribution/DataDownload/contentUrl, that is equivalent to dcat:accessURL
 
 
 #### [**distribution**]{.underline}
@@ -288,7 +288,7 @@ file-based access to a resource via URL; the DataDownload object provides a link
 
 **Content:** string.uri
 
-**Description:** Expected to be an http uri that will directly GET the content of the resource described by this metadata record, in the format specified by the encodingFormat property, and conforming to any specifications identified in the dcterms:conformsTo property.
+**Description:** Expected to be an http uri that will directly GET the content of the resource described by this metadata record, in the format specified by the encodingFormat property, and conforming to any specifications identified in the dcterms:conformsTo property. Equivalent to dcat:accessURL.  A landing page url (dcat:landingPage) should be placed in the Dataset/schema:url property.
 
 
 #### [**name**]{.underline}
@@ -724,7 +724,7 @@ This is the class used to provide information about the metadata record itself.
 
 **Content:** [object reference](#object-reference)
 
-**Description:** Identifiers for conformance classes/profiles that the metadata record follows. For CDIF discovery must include ‘https://w3id.org/cdif/discovery/1.0’ and ‘https://w3id.org/cdif/core/1.0’ because conforms to both profiles.
+**Description:** Identifiers for conformance classes/profiles that the metadata record follows. For CDIF Core this must include 'https://w3id.org/cdif/core/1.0'; a record that also conforms to a higher-level profile (e.g. Discovery) lists that profile's identifier as well.
 
 
 #### [**description**]{.underline}
@@ -953,7 +953,7 @@ This is the type used for links that have an associated semantic conveyed by the
 
 #### [**@type**]{.underline}
 
-**Cardinality:** Required – 'LinkRole, Repeatable
+**Cardinality:** Required – 'LinkRole', Repeatable
 
 **Content:** string.uri
 
@@ -991,9 +991,9 @@ Use to document the URL that is the target for invoking an action, or that is th
 
 **Cardinality:** Optional
 
-**Content:** string**,** MIME TYPE**
+**Content:** string, MIME Type
 
-**Description:** **
+**Description:** MIME type / media type identifier for the representation returned from the URL.
 
 
 #### [**name**]{.underline}
@@ -1099,7 +1099,9 @@ Any property with a 1..\* or 0..\* cardinality has values that are always implem
 
 ## Namespace prefixes and JSON validation.
 
-Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure -- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as "schema:name", "name", or "http://schema.org/name" depending on the @context. A JSON Schema that checks for "schema:name" will reject a document that uses "name", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents..
+Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure -- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as "schema:name", "name", or "http://schema.org/name" depending on the @context. A JSON Schema that checks for "schema:name" will reject a document that uses "name", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents.
+
+The JSON Schema validates **one metadata record at a time**: the document root must be a single `schema:Dataset` node with the mandatory properties at the top level. A multi-record bundle packaged as `{ "@graph": [ ... ] }` -- the natural output of many harvesters and federated catalogs -- will fail JSON Schema validation immediately, because `@graph` is not in the schema's property list. This is purely a packaging mismatch: the bundled records may be perfectly valid individually, and SHACL (which operates on the RDF graph rather than the JSON tree) will still pass them. Before JSON-Schema validation, extract each `schema:Dataset` record from the graph using JSON-LD framing. The `FrameAndValidate.py` script and `cdifCore-frame.jsonld` frame in this repository do exactly this -- framing a document against the CDIF frame and extracting the dataset node out of `@graph` -- and can be run with `--validate` to frame and JSON-Schema-validate in one step.
 
 ## Use of dcat:CatalogRecord
 
@@ -1134,7 +1136,7 @@ To address this issue, CDIF recommends that statements about the metadata record
     "sdDatePublished": "2017-05-23",
     "about": { "@id": "ex:URIforNode1" },
     "description": "metadata about documentation for ex:URIforDescribedResource",
-    "dcterms:conformsTo": { "@id": "https://w3id.org/cdif/discovery/1.0" }
+    "dcterms:conformsTo": { "@id": "https://w3id.org/cdif/core/1.0" }
   }
 }
 ```

@@ -4,7 +4,7 @@ Core interoperability specification for CDIF (Cross-Domain Interoperability Fram
 
 ## Specification
 
-- **[CDIFCoreClasses.md](CDIFCoreClasses.md)** — Complete documentation of all classes and properties for the CDIF Core profile, including required/optional properties, data types, and JSON-LD implementation guidance.
+- **[CDIFCoreImplementationGuide.md](CDIFCoreImplementationGuide.md)** — Complete documentation of all classes and properties for the CDIF Core profile, including required/optional properties, data types, and JSON-LD implementation guidance.
 - **[cdifCoreStructuredSchema.json](cdifCoreStructuredSchema.json)** — JSON Schema (Draft 2020-12) for validating CDIF Core profile instances. Generated from the [metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks) source schemas.
 - **[coreRules.shacl](coreRules.shacl)** — SHACL validation shapes for CDIF Core. Copied from [`metadataBuildingBlocks/_sources/cdifProperties/cdifCore/rules.shacl`](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks/blob/main/_sources/cdifProperties/cdifCore/rules.shacl) and should be updated whenever the source changes.
 
@@ -65,8 +65,8 @@ The script uses **`cdifCore-frame.jsonld`** to frame JSON-LD documents into the 
 ## Repository structure
 
 ```
-├── CDIFCoreClasses.md              Classes and properties documentation
-├── cdifCoreStructuredSchema.json   JSON Schema for validation
+├── CDIFCoreImplementationGuide.md  Classes and properties documentation
+├── cdifCoreStructuredSchema.json    JSON Schema for validation
 ├── cdifCore-frame.jsonld           JSON-LD frame for document framing
 ├── FrameAndValidate.py             JSON-LD framing and JSON Schema validation
 ├── coreRules.shacl                 SHACL validation shapes (synced from metadataBuildingBlocks)

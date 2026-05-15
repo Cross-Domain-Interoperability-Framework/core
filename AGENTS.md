@@ -6,7 +6,7 @@ This repository hosts the CDIF Core profile — the base level of CDIF conforman
 
 ## Key files
 
-- `CDIFCoreClasses.md` — Human-readable specification of all classes and properties
+- `CDIFCoreImplementationGuide.md` — Human-readable specification of all classes and properties
 - `cdifCoreStructuredSchema.json` — JSON Schema for validation (generated from metadataBuildingBlocks)
 - `coreRules.shacl` — SHACL shapes (copied from metadataBuildingBlocks, keep in sync)
 - `examples/` — Validated JSON-LD examples from diverse sources
