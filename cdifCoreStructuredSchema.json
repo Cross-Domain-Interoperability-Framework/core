@@ -392,7 +392,7 @@
                     },
                     "schema:target": {
                       "type": "object",
-                      "description": "specifies the request target location and request syntax",
+                      "description": "specifies the request target location and request syntax. Documentation of the URL end point and syntax to invoke the service. This schema doesn't handle post requests.",
                       "properties": {
                         "@type": {
                           "default": "schema:EntryPoint",
@@ -446,7 +446,7 @@
                     },
                     "schema:result": {
                       "type": "object",
-                      "description": "specifies the serialization scheme (encoding format, information model) for expected representation of the data",
+                      "description": "specifies the serialization scheme (encoding format, information model) for expected representation of the data. Documentation of the serialization format for the API response.",
                       "properties": {
                         "@type": {
                           "type": "array",
@@ -472,7 +472,7 @@
                     },
                     "schema:object": {
                       "type": "object",
-                      "description": "The entity upon which the action is carried out, whose state is kept intact or changed.",
+                      "description": "The entity upon which the action is carried out, whose state is kept intact or changed. This is an open ended class for general description of Actions. When schema:Action (or a subclass) is used to describe operations for a WebAPI distribution, the object is implicitly the resource that is the subject of the containing metadata record, so this property would be superfluous.",
                       "properties": {
                         "@type": {
                           "default": "schema:Thing",
@@ -491,6 +491,7 @@
                       "type": "array",
                       "items": {
                         "type": "object",
+                        "description": "Query input parameter for a web API action, typed as schema:PropertyValueSpecification.",
                         "properties": {
                           "@id": {
                             "type": "string"
@@ -819,14 +820,8 @@
             "minItems": 1
           },
           "schema:identifier": {
-            "allOf": [
-              {
-                "$ref": "#/$defs/Identifier"
-              },
-              {
-                "description": "identifier for a particular grant"
-              }
-            ]
+            "$ref": "#/$defs/Identifier",
+            "description": "identifier for a particular grant"
           },
           "schema:description": {
             "type": "string",
@@ -1037,14 +1032,8 @@
               "description": "locator to access a landing page for the collection or catalog"
             },
             "schema:identifier": {
-              "allOf": [
-                {
-                  "$ref": "#/$defs/Identifier"
-                },
-                {
-                  "description": "identifier for the collection or catalog; use identifier_type to provide information on identifier scheme and context for identifier"
-                }
-              ]
+              "$ref": "#/$defs/Identifier",
+              "description": "identifier for the collection or catalog; use identifier_type to provide information on identifier scheme and context for identifier"
             }
           }
         }
@@ -1303,14 +1292,8 @@
           "description": "other labels by which the person might be known"
         },
         "schema:affiliation": {
-          "allOf": [
-            {
-              "$ref": "#/$defs/Organization"
-            },
-            {
-              "description": "if affiliation is present, value must be a schema:Organization."
-            }
-          ]
+          "$ref": "#/$defs/Organization",
+          "description": "if affiliation is present, value must be a schema:Organization."
         },
         "schema:contactPoint": {
           "type": "object",
