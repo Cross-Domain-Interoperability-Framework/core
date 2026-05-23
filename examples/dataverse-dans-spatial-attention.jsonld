@@ -73,7 +73,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 608140000,
+      "schema:contentSize": "608140000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220197"
     },
@@ -85,7 +85,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13583,
+      "schema:contentSize": "13583",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220218"
     },
@@ -97,7 +97,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49261,
+      "schema:contentSize": "49261",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220303"
     },
@@ -109,7 +109,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 536291600,
+      "schema:contentSize": "536291600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220181"
     },
@@ -121,7 +121,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13583,
+      "schema:contentSize": "13583",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220294"
     },
@@ -133,7 +133,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49457,
+      "schema:contentSize": "49457",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220228"
     },
@@ -145,7 +145,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 840294000,
+      "schema:contentSize": "840294000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220221"
     },
@@ -157,7 +157,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13587,
+      "schema:contentSize": "13587",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220163"
     },
@@ -169,7 +169,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49883,
+      "schema:contentSize": "49883",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220219"
     },
@@ -181,7 +181,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 592108400,
+      "schema:contentSize": "592108400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220270"
     },
@@ -193,7 +193,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 16005,
+      "schema:contentSize": "16005",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220146"
     },
@@ -205,7 +205,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49227,
+      "schema:contentSize": "49227",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220246"
     },
@@ -217,7 +217,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 920296000,
+      "schema:contentSize": "920296000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220285"
     },
@@ -229,7 +229,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13587,
+      "schema:contentSize": "13587",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220278"
     },
@@ -241,7 +241,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50246,
+      "schema:contentSize": "50246",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220269"
     },
@@ -253,7 +253,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 658751600,
+      "schema:contentSize": "658751600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220250"
     },
@@ -265,7 +265,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13583,
+      "schema:contentSize": "13583",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220165"
     },
@@ -277,7 +277,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50758,
+      "schema:contentSize": "50758",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220236"
     },
@@ -289,7 +289,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 844651600,
+      "schema:contentSize": "844651600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220167"
     },
@@ -301,7 +301,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14798,
+      "schema:contentSize": "14798",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220193"
     },
@@ -313,7 +313,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49642,
+      "schema:contentSize": "49642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220183"
     },
@@ -325,7 +325,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 556930400,
+      "schema:contentSize": "556930400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220225"
     },
@@ -337,7 +337,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14103,
+      "schema:contentSize": "14103",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220249"
     },
@@ -349,7 +349,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49045,
+      "schema:contentSize": "49045",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220153"
     },
@@ -361,7 +361,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 883126400,
+      "schema:contentSize": "883126400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220191"
     },
@@ -373,7 +373,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14107,
+      "schema:contentSize": "14107",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220296"
     },
@@ -385,7 +385,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49443,
+      "schema:contentSize": "49443",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220206"
     },
@@ -397,7 +397,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 572244400,
+      "schema:contentSize": "572244400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220216"
     },
@@ -409,7 +409,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13583,
+      "schema:contentSize": "13583",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220273"
     },
@@ -421,7 +421,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49102,
+      "schema:contentSize": "49102",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220178"
     },
@@ -433,7 +433,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 809822000,
+      "schema:contentSize": "809822000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220252"
     },
@@ -445,7 +445,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14798,
+      "schema:contentSize": "14798",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220272"
     },
@@ -457,7 +457,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49408,
+      "schema:contentSize": "49408",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220151"
     },
@@ -469,7 +469,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 627738800,
+      "schema:contentSize": "627738800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220298"
     },
@@ -481,7 +481,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 16005,
+      "schema:contentSize": "16005",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220152"
     },
@@ -493,7 +493,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49012,
+      "schema:contentSize": "49012",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220248"
     },
@@ -505,7 +505,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 958666800,
+      "schema:contentSize": "958666800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220226"
     },
@@ -517,7 +517,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13587,
+      "schema:contentSize": "13587",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220204"
     },
@@ -529,7 +529,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48508,
+      "schema:contentSize": "48508",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220295"
     },
@@ -541,7 +541,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 622694800,
+      "schema:contentSize": "622694800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220209"
     },
@@ -553,7 +553,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14794,
+      "schema:contentSize": "14794",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220230"
     },
@@ -565,7 +565,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48068,
+      "schema:contentSize": "48068",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220302"
     },
@@ -577,7 +577,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 825968000,
+      "schema:contentSize": "825968000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220288"
     },
@@ -589,7 +589,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 16009,
+      "schema:contentSize": "16009",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220243"
     },
@@ -601,7 +601,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 52467,
+      "schema:contentSize": "52467",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220217"
     },
@@ -613,7 +613,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 642668000,
+      "schema:contentSize": "642668000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220189"
     },
@@ -625,7 +625,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 16005,
+      "schema:contentSize": "16005",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220220"
     },
@@ -637,7 +637,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48870,
+      "schema:contentSize": "48870",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220305"
     },
@@ -649,7 +649,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 1038840400,
+      "schema:contentSize": "1038840400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220277"
     },
@@ -661,7 +661,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 16009,
+      "schema:contentSize": "16009",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220212"
     },
@@ -673,7 +673,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49401,
+      "schema:contentSize": "49401",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220299"
     },
@@ -685,7 +685,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 610157600,
+      "schema:contentSize": "610157600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220265"
     },
@@ -697,7 +697,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19638,
+      "schema:contentSize": "19638",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220271"
     },
@@ -709,7 +709,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48911,
+      "schema:contentSize": "48911",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220175"
     },
@@ -721,7 +721,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 870958400,
+      "schema:contentSize": "870958400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220283"
     },
@@ -733,7 +733,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19642,
+      "schema:contentSize": "19642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220308"
     },
@@ -745,7 +745,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49472,
+      "schema:contentSize": "49472",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220192"
     },
@@ -757,7 +757,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 561340000,
+      "schema:contentSize": "561340000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220293"
     },
@@ -769,7 +769,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 16005,
+      "schema:contentSize": "16005",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220261"
     },
@@ -781,7 +781,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48998,
+      "schema:contentSize": "48998",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220187"
     },
@@ -793,7 +793,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 868259600,
+      "schema:contentSize": "868259600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220309"
     },
@@ -805,7 +805,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 18431,
+      "schema:contentSize": "18431",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220214"
     },
@@ -817,7 +817,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49369,
+      "schema:contentSize": "49369",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220300"
     },
@@ -829,7 +829,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 586014000,
+      "schema:contentSize": "586014000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220239"
     },
@@ -841,7 +841,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14794,
+      "schema:contentSize": "14794",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220245"
     },
@@ -853,7 +853,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49184,
+      "schema:contentSize": "49184",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220144"
     },
@@ -865,7 +865,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 860308800,
+      "schema:contentSize": "860308800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220160"
     },
@@ -877,7 +877,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 18431,
+      "schema:contentSize": "18431",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220257"
     },
@@ -889,7 +889,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49308,
+      "schema:contentSize": "49308",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220290"
     },
@@ -901,7 +901,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 582176400,
+      "schema:contentSize": "582176400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220164"
     },
@@ -913,7 +913,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14794,
+      "schema:contentSize": "14794",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220162"
     },
@@ -925,7 +925,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48885,
+      "schema:contentSize": "48885",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220231"
     },
@@ -937,7 +937,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 848203200,
+      "schema:contentSize": "848203200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220284"
     },
@@ -949,7 +949,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13587,
+      "schema:contentSize": "13587",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220276"
     },
@@ -961,7 +961,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49314,
+      "schema:contentSize": "49314",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220227"
     },
@@ -973,7 +973,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 628009200,
+      "schema:contentSize": "628009200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220179"
     },
@@ -985,7 +985,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 20849,
+      "schema:contentSize": "20849",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220280"
     },
@@ -997,7 +997,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50050,
+      "schema:contentSize": "50050",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220213"
     },
@@ -1009,7 +1009,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 846887600,
+      "schema:contentSize": "846887600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220173"
     },
@@ -1021,7 +1021,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19642,
+      "schema:contentSize": "19642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220232"
     },
@@ -1033,7 +1033,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49333,
+      "schema:contentSize": "49333",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220304"
     },
@@ -1045,7 +1045,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 594365200,
+      "schema:contentSize": "594365200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220314"
     },
@@ -1057,7 +1057,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19638,
+      "schema:contentSize": "19638",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220282"
     },
@@ -1069,7 +1069,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48790,
+      "schema:contentSize": "48790",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220215"
     },
@@ -1081,7 +1081,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 909448800,
+      "schema:contentSize": "909448800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220185"
     },
@@ -1093,7 +1093,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 18431,
+      "schema:contentSize": "18431",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220170"
     },
@@ -1105,7 +1105,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49615,
+      "schema:contentSize": "49615",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220260"
     },
@@ -1117,7 +1117,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 631051200,
+      "schema:contentSize": "631051200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220263"
     },
@@ -1129,7 +1129,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 17216,
+      "schema:contentSize": "17216",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220184"
     },
@@ -1141,7 +1141,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49036,
+      "schema:contentSize": "49036",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220256"
     },
@@ -1153,7 +1153,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 884774800,
+      "schema:contentSize": "884774800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220199"
     },
@@ -1165,7 +1165,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19642,
+      "schema:contentSize": "19642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220202"
     },
@@ -1177,7 +1177,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49488,
+      "schema:contentSize": "49488",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220172"
     },
@@ -1189,7 +1189,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 626553200,
+      "schema:contentSize": "626553200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220169"
     },
@@ -1201,7 +1201,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 18427,
+      "schema:contentSize": "18427",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220242"
     },
@@ -1213,7 +1213,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49056,
+      "schema:contentSize": "49056",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220188"
     },
@@ -1225,7 +1225,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 1026584000,
+      "schema:contentSize": "1026584000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220244"
     },
@@ -1237,7 +1237,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19642,
+      "schema:contentSize": "19642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220267"
     },
@@ -1249,7 +1249,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50253,
+      "schema:contentSize": "50253",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220196"
     },
@@ -1261,7 +1261,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 611910000,
+      "schema:contentSize": "611910000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220198"
     },
@@ -1273,7 +1273,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 18427,
+      "schema:contentSize": "18427",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220247"
     },
@@ -1285,7 +1285,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49055,
+      "schema:contentSize": "49055",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220145"
     },
@@ -1297,7 +1297,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 871192400,
+      "schema:contentSize": "871192400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220306"
     },
@@ -1309,7 +1309,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 22064,
+      "schema:contentSize": "22064",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220176"
     },
@@ -1321,7 +1321,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 53049,
+      "schema:contentSize": "53049",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220210"
     },
@@ -1333,7 +1333,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 596320400,
+      "schema:contentSize": "596320400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220310"
     },
@@ -1345,7 +1345,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19638,
+      "schema:contentSize": "19638",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220180"
     },
@@ -1357,7 +1357,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49005,
+      "schema:contentSize": "49005",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220251"
     },
@@ -1369,7 +1369,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 854833200,
+      "schema:contentSize": "854833200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220208"
     },
@@ -1381,7 +1381,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19642,
+      "schema:contentSize": "19642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220171"
     },
@@ -1393,7 +1393,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49380,
+      "schema:contentSize": "49380",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220301"
     },
@@ -1405,7 +1405,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 621186800,
+      "schema:contentSize": "621186800",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220279"
     },
@@ -1417,7 +1417,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19638,
+      "schema:contentSize": "19638",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220281"
     },
@@ -1429,7 +1429,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49068,
+      "schema:contentSize": "49068",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220211"
     },
@@ -1441,7 +1441,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 851921200,
+      "schema:contentSize": "851921200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220262"
     },
@@ -1453,7 +1453,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 19642,
+      "schema:contentSize": "19642",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220266"
     },
@@ -1465,7 +1465,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49402,
+      "schema:contentSize": "49402",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220275"
     },
@@ -1477,7 +1477,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 618155200,
+      "schema:contentSize": "618155200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220235"
     },
@@ -1489,7 +1489,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14101,
+      "schema:contentSize": "14101",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220238"
     },
@@ -1501,7 +1501,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49068,
+      "schema:contentSize": "49068",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220313"
     },
@@ -1513,7 +1513,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 833118000,
+      "schema:contentSize": "833118000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220201"
     },
@@ -1525,7 +1525,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 15316,
+      "schema:contentSize": "15316",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220234"
     },
@@ -1537,7 +1537,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49289,
+      "schema:contentSize": "49289",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220224"
     },
@@ -1549,7 +1549,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 589784000,
+      "schema:contentSize": "589784000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220259"
     },
@@ -1561,7 +1561,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14792,
+      "schema:contentSize": "14792",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220200"
     },
@@ -1573,7 +1573,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49214,
+      "schema:contentSize": "49214",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220274"
     },
@@ -1585,7 +1585,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 959114000,
+      "schema:contentSize": "959114000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220143"
     },
@@ -1597,7 +1597,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13585,
+      "schema:contentSize": "13585",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220311"
     },
@@ -1609,7 +1609,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50536,
+      "schema:contentSize": "50536",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220194"
     },
@@ -1621,7 +1621,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 591775600,
+      "schema:contentSize": "591775600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220258"
     },
@@ -1633,7 +1633,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13581,
+      "schema:contentSize": "13581",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220254"
     },
@@ -1645,7 +1645,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49100,
+      "schema:contentSize": "49100",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220286"
     },
@@ -1657,7 +1657,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 881202400,
+      "schema:contentSize": "881202400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220233"
     },
@@ -1669,7 +1669,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13585,
+      "schema:contentSize": "13585",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220255"
     },
@@ -1681,7 +1681,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49376,
+      "schema:contentSize": "49376",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220182"
     },
@@ -1693,7 +1693,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 600085200,
+      "schema:contentSize": "600085200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220292"
     },
@@ -1705,7 +1705,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13581,
+      "schema:contentSize": "13581",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220312"
     },
@@ -1717,7 +1717,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49185,
+      "schema:contentSize": "49185",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220223"
     },
@@ -1729,7 +1729,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 862919200,
+      "schema:contentSize": "862919200",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220253"
     },
@@ -1741,7 +1741,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14796,
+      "schema:contentSize": "14796",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220174"
     },
@@ -1753,7 +1753,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49277,
+      "schema:contentSize": "49277",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220207"
     },
@@ -1765,7 +1765,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 599482000,
+      "schema:contentSize": "599482000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220168"
     },
@@ -1777,7 +1777,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13581,
+      "schema:contentSize": "13581",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220177"
     },
@@ -1789,7 +1789,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 48470,
+      "schema:contentSize": "48470",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220289"
     },
@@ -1801,7 +1801,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 1164914400,
+      "schema:contentSize": "1164914400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220307"
     },
@@ -1813,7 +1813,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13585,
+      "schema:contentSize": "13585",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220297"
     },
@@ -1825,7 +1825,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50624,
+      "schema:contentSize": "50624",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220229"
     },
@@ -1837,7 +1837,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 756834000,
+      "schema:contentSize": "756834000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220150"
     },
@@ -1849,7 +1849,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13581,
+      "schema:contentSize": "13581",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220237"
     },
@@ -1861,7 +1861,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 50379,
+      "schema:contentSize": "50379",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220166"
     },
@@ -1873,7 +1873,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 945854000,
+      "schema:contentSize": "945854000",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220205"
     },
@@ -1885,7 +1885,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 13585,
+      "schema:contentSize": "13585",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220190"
     },
@@ -1897,7 +1897,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49225,
+      "schema:contentSize": "49225",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220264"
     },
@@ -1909,7 +1909,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 628877600,
+      "schema:contentSize": "628877600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220222"
     },
@@ -1921,7 +1921,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14792,
+      "schema:contentSize": "14792",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220287"
     },
@@ -1933,7 +1933,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49090,
+      "schema:contentSize": "49090",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220195"
     },
@@ -1945,7 +1945,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 909828400,
+      "schema:contentSize": "909828400",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220161"
     },
@@ -1957,7 +1957,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14796,
+      "schema:contentSize": "14796",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220291"
     },
@@ -1969,7 +1969,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49181,
+      "schema:contentSize": "49181",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220203"
     },
@@ -1981,7 +1981,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 841895600,
+      "schema:contentSize": "841895600",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220268"
     },
@@ -1993,7 +1993,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 14796,
+      "schema:contentSize": "14796",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220186"
     },
@@ -2005,7 +2005,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 49836,
+      "schema:contentSize": "49836",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220241"
     },
@@ -2017,7 +2017,7 @@
       "schema:encodingFormat": [
         "application/pdf"
       ],
-      "schema:contentSize": 429793,
+      "schema:contentSize": "429793",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220323"
     },
@@ -2029,7 +2029,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 78815,
+      "schema:contentSize": "78815",
       "schema:description": "",
       "schema:contentUrl": "https://ssh.datastations.nl/api/access/datafile/220322"
     }

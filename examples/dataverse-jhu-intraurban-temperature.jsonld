@@ -197,7 +197,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 4603476,
+      "schema:contentSize": "4603476",
       "schema:description": "Data, metadata, Readme and sample code used in publication Scott et al 2016.",
       "@id": "https://doi.org/10.7281/T10Z715B/HHGUOR",
       "schema:identifier": "https://doi.org/10.7281/T10Z715B/HHGUOR",

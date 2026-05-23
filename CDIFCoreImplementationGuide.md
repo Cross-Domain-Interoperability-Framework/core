@@ -318,6 +318,15 @@ file-based access to a resource via URL; the DataDownload object provides a link
 **Description:** Identifier for format from a registry
 
 
+#### [**contentSize**]{.underline}
+
+**Cardinality:** Optional
+
+**Content:** string
+
+**Description:** File size of this distribution, expressed as a string -- e.g. '2.5 MB' or a byte count like '144143'. Per schema.org/contentSize.
+
+
 #### [**spdx:checksum**]{.underline}
 
 **Cardinality:** Optional

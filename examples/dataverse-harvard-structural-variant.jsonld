@@ -64,7 +64,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 60862600,
+      "schema:contentSize": "60862600",
       "schema:description": "For detailed information about the dataset structure, data sources, and processing methodology, please refer to the README file included in this repository.",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13632174"
     },
@@ -76,7 +76,7 @@
       "schema:encodingFormat": [
         "text/markdown"
       ],
-      "schema:contentSize": 5800,
+      "schema:contentSize": "5800",
       "schema:description": "updated",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13639617"
     },
@@ -88,7 +88,7 @@
       "schema:encodingFormat": [
         "application/zip"
       ],
-      "schema:contentSize": 76421,
+      "schema:contentSize": "76421",
       "schema:description": "Version 2: STAG3 coordinate correction. Original analysis used wrong coordinates (chr7:99,819,969-99,895,036) due to an Ensembl REST API error. Correct GRCh38 coordinates confirmed from NCBI Gene ID 10734 are chr7:100,177,724-100,219,334. Corrected files added as stag3_verification.zip. All other 31 gene findings, methodology, and results are unchanged.",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13639573"
     }

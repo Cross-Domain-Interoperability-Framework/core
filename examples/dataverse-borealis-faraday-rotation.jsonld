@@ -184,7 +184,7 @@
       "schema:encodingFormat": [
         "text/x-python"
       ],
-      "schema:contentSize": 6196,
+      "schema:contentSize": "6196",
       "schema:description": "Automation of plotting figures displaying microwave scattering parameters versus magnetic field, rotation tangent versus magnetic field, theoretical model parameters versus frequency, complex rotation tangent versus magnetic field, and maximum complex rotation angle versus freuqency.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124514"
     },
@@ -196,7 +196,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of alpha parameter using high temperature data (4K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124496"
     },
@@ -208,7 +208,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of complex rotation tangent amplitude using high temperature data (4K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124493"
     },
@@ -220,7 +220,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of complex maximum rotation tangent amplitude using high temperature data (4K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124494"
     },
@@ -232,7 +232,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of microwave scattering parameter (parallel polarization) using high temperature data (4K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124495"
     },
@@ -244,7 +244,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of microwave scattering parameter (perpendicular polarization) using high temperature data (4K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124492"
     },
@@ -256,7 +256,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of generalized complex mobility using high temperature data (4K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124497"
     },
@@ -268,7 +268,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of microwave scattering parameter (parallel polarization) using low temperature data (10 mK). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124498"
     },
@@ -280,7 +280,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 6544,
+      "schema:contentSize": "6544",
       "schema:description": "Analysis of microwave scattering parameter (perpendicular polarization) using low temperature data (10 mK). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124499"
     },
@@ -292,7 +292,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 3336,
+      "schema:contentSize": "3336",
       "schema:description": "Microwave scattering parameters analysis versus frequency. Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124477"
     },
@@ -304,7 +304,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 3856144,
+      "schema:contentSize": "3856144",
       "schema:description": "Microwave scattering (parallel polarization) versus magnetic field at high temperature (4 K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124479"
     },
@@ -316,7 +316,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 3856144,
+      "schema:contentSize": "3856144",
       "schema:description": "Microwave scattering (perpendicular polarization) versus magnetic field at high temperature (4 K). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124480"
     },
@@ -328,7 +328,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 3856144,
+      "schema:contentSize": "3856144",
       "schema:description": "Microwave scattering (parallel polarization) versus magnetic field at low temperature (10 mK). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124476"
     },
@@ -340,7 +340,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 3856144,
+      "schema:contentSize": "3856144",
       "schema:description": "Microwave scattering (perpendicular polarization) versus magnetic field at low temperature (10 mK). Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124481"
     },
@@ -352,7 +352,7 @@
       "schema:encodingFormat": [
         "application/octet-stream"
       ],
-      "schema:contentSize": 4936,
+      "schema:contentSize": "4936",
       "schema:description": "Microwave scattering parameters analysis versus magnetic field. Python file.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124478"
     },
@@ -364,7 +364,7 @@
       "schema:encodingFormat": [
         "text/x-matlab"
       ],
-      "schema:contentSize": 2865,
+      "schema:contentSize": "2865",
       "schema:description": "MATLAB script for calculation of microwave component (waveguide and iris) parameters.",
       "schema:contentUrl": "https://borealisdata.ca/api/access/datafile/1124460"
     }

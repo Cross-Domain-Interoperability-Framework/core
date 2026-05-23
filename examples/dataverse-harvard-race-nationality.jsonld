@@ -131,7 +131,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 1033,
+      "schema:contentSize": "1033",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419322"
     },
     {
@@ -142,7 +142,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 14618,
+      "schema:contentSize": "14618",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419325"
     },
     {
@@ -153,7 +153,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 16526,
+      "schema:contentSize": "16526",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419319"
     },
     {
@@ -164,7 +164,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 26594,
+      "schema:contentSize": "26594",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419324"
     },
     {
@@ -175,7 +175,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 52434,
+      "schema:contentSize": "52434",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13645417"
     },
     {
@@ -186,7 +186,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 75918,
+      "schema:contentSize": "75918",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13645418"
     },
     {
@@ -197,7 +197,7 @@
       "schema:encodingFormat": [
         "type/x-r-syntax"
       ],
-      "schema:contentSize": 5604,
+      "schema:contentSize": "5604",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419328"
     },
     {
@@ -208,7 +208,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 2867426,
+      "schema:contentSize": "2867426",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419320"
     },
     {
@@ -219,7 +219,7 @@
       "schema:encodingFormat": [
         "text/tab-separated-values"
       ],
-      "schema:contentSize": 5628945,
+      "schema:contentSize": "5628945",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419321"
     },
     {
@@ -230,7 +230,7 @@
       "schema:encodingFormat": [
         "text/rtf"
       ],
-      "schema:contentSize": 1523,
+      "schema:contentSize": "1523",
       "schema:contentUrl": "https://dataverse.harvard.edu/api/access/datafile/13419323"
     }
   ],
