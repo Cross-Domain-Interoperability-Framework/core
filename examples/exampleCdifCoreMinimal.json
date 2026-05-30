@@ -17,6 +17,9 @@
   "schema:license": [
     "https://creativecommons.org/publicdomain/zero/1.0/"
   ],
+  "schema:variableMeasured": [
+    "bathymetric depth"
+  ],
   "schema:subjectOf": {
     "@type": [
       "schema:Dataset"
@@ -32,7 +35,6 @@
       {
         "@id": "https://w3id.org/cdif/core/1.0"
       }
-    ],
-    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating minimal valid CDIF core profile metadata."
+    ]
   }
 }

@@ -331,6 +331,10 @@
       "schema:url": "https://example.org/argo-raw"
     }
   ],
+  "schema:variableMeasured": [
+    "sea water temperature",
+    "sea water salinity"
+  ],
   "schema:subjectOf": {
     "@type": [
       "schema:Dataset"
@@ -344,7 +348,7 @@
     },
     "dcterms:conformsTo": [
       {
-        "@id": "https://w3id.org/cdif/bbr/metadata/cdifProperties/cdifCore"
+        "@id": "https://w3id.org/cdif/bbr/metadata/profiles/cdifProfile/cdifCore"
       },
       {
         "@id": "https://w3id.org/cdif/core/1.0"
@@ -379,7 +383,6 @@
         "schema:propertyID": "https://example.org/catalog-registry",
         "schema:value": "ocean-data-catalog-001"
       }
-    },
-    "schema:description": "Synthetic example created for the CDIF specification documentation, illustrating a complete CDIF core profile record with all optional properties. Based on a fictional Argo float ocean temperature dataset."
+    }
   }
 }
