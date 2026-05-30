@@ -46,37 +46,37 @@ The information model for the base core profile is defined in the cdifBook. This
 
 ## Action {#sec-action}
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required, Repeatable
 - **Content:** string.uri
 - **Description:** The rdf type default is 'Action', but any of these schema.org actions will validate: {Action, AssessAction, ConsumeAction, ControlAction, CreateAction, DeleteAction, FindAction, InteractAction, MoveAction, PlayAction, SearchAction, TransferAction, UpdateAction}
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** text label for the action
 
-### [**target**]{.underline}
+### **target**
 
 - **Cardinality:** Required
 - **Content:** [EntryPoint](#sec-entrypoint)
 - **Description:** specifies the request target location and request syntax
 
-### [**result**]{.underline}
+### **result**
 
 - **Cardinality:** Optional
 - **Content:** [DataDownload](#sec-datadownload)
 - **Description:** specifies the serialization scheme (encoding format, information model) for expected representation of the data
 
-### [**object**]{.underline}
+### **object**
 
 - **Cardinality:** Optional
 - **Content:** Thing
 - **Description:** Specifies the resource that is the object (input) of the action. The value is an open ended class (Thing can be anything…) for general description of Actions. When schema:Action (or a subclass) is used to descibe operations for a WebAPI distribution (the normal CDIF usage), the object is implicitly the resource that is the subject of the containing metadata record, so this property would be superfluous.
 
-### [**query-input**]{.underline}
+### **query-input**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [PropertyValueSpecification](#sec-propertyvaluespec)
@@ -90,12 +90,12 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - Information about how to communicate with a person or organization. CDIF only includes e-mail in its schema.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'ContactPoint', Repeatable
 - **Content:** string.uri
 
-### [**email**]{.underline}
+### **email**
 
 - **Cardinality:** Required
 - **Content:** string
@@ -105,19 +105,19 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - For more granularity on how an agent contributed to a resource, use schema:Role. The schema.org documentation does not state that the Role type is an expected data type for the contributor property, but that is addressed in this blog post (http://blog.schema.org/2014/06/introducing-role.html). see also [ESIPfed Science on Schema.org roles of people note](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#roles-of-people).
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required -- 'Role', Repeatable
 - **Content:** string.uri
 - **Description:** rdf:type
 
-### [**roleName**]{.underline}
+### **roleName**
 
 - **Cardinality:** Required
 - **Content:** string, [DefinedTerm](#sec-definedterm)
 - **Description:** term that specifies the relationship between the contributor and the described resource.
 
-### [**contributor**]{.underline}
+### **contributor**
 
 - **Cardinality:** Required
 - **Content:** [object reference](#object-reference), [Person](#sec-person) or [Organization](#sec-organization)
@@ -126,55 +126,55 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - file-based access to a resource via URL; the DataDownload object provides a link to get the resource content, along with information about the serialization format and conventions used.
 
-### [**@id**]{.underline}
+### **@id**
 
 - **Cardinality:** Optional
 - **Content:** string:uri
 - **Description:** Graph node identifiers are only necessary if the node content will be referenced in other places
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'schema:DataDownload', other types optional
 - **Content:** string.uri
 - **Description:** This is the rdf:type.
 
-### [**contentUrl**]{.underline}
+### **contentUrl**
 
 - **Cardinality:** Required
 - **Content:** string.uri
 - **Description:** Expected to be an http uri that will directly GET the content of the resource described by this metadata record, in the format specified by the encodingFormat property, and conforming to any specifications identified in the dcterms:conformsTo property. Equivalent to dcat:accessURL.  A landing page url (dcat:landingPage) should be placed in the Dataset/schema:url property.
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** String to identify this download option in user interface
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** string providing information to document this download option in user interface
 
-### [**encodingFormat**]{.underline}
+### **encodingFormat**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string:MIME Type
 - **Description:** Identifier for format from a registry
 
-### [**spdx:checksum**]{.underline}
+### **spdx:checksum**
 
 - **Cardinality:** Optional
 - **Content:** [spdx:Checksum](#sec-spdxchecksum)
 - **Description:** Checksum string that is 'footprint' of the described file to enable testing for file modification. Algorithm used is specified by spdx:algorithm property.
 
-### [**dcterms:conformsTo**]{.underline}
+### **dcterms:conformsTo**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [object reference](#object-reference)
 - **Description:** An identifier for a specification that the distribution conforms to. Recommended to enable machine-actionable data access. The target download might conform to more that one profile specification.
 
-### [**provider**]{.underline}
+### **provider**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
@@ -186,30 +186,30 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - An accessible collection of data. The data might be metadata (about other resources) or datasets.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'DataCatalog', Repeatable
 - **Content:** string.uri
 
-### [**@id**]{.underline}
+### **@id**
 
 - **Cardinality:** Optional
 - **Content:** string.uri
 - **Description:** identifier for graph node.
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Label for the data catalog.
 
-### [**url**]{.underline}
+### **url**
 
 - **Cardinality:** Optional
 - **Content:** string.url
 - **Description:** Url to access catalog landing page.
 
-### [**identifier**]{.underline}
+### **identifier**
 
 - **Cardinality:** Optional
 - **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
@@ -219,53 +219,53 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - This is the class used to provide information about the metadata record itself.
 
-### [**@id**]{.underline}
+### **@id**
 
 - **Cardinality:** Required
 - **Content:** string.uri
 - **Description:** Identifier for the metadata record.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – "Dataset", Repeatable
 - **Content:** string.uri
 
-### [**additionalType**]{.underline}
+### **additionalType**
 
 - **Cardinality:** Required – "dcat:CatalogRecord", Repeatable
 - **Content:** string
 
-### [**about**]{.underline}
+### **about**
 
 - **Cardinality:** Required
 - **Content:** [object reference](#object-reference)
 - **Description:** This must be a reference to the metadata record that this node documents, using the @id of that record.
 
-### [**conformsTo**]{.underline}
+### **conformsTo**
 
 - **Cardinality:** Required, Repeatable
 - **Content:** [object reference](#object-reference)
 - **Description:** Identifiers for conformance classes/profiles that the metadata record follows. For CDIF Core this must include 'https://w3id.org/cdif/core/1.0'; a record that also conforms to a higher-level profile (e.g. Discovery) lists that profile's identifier as well.
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** other information about the metadata record that might be useful.
 
-### [**maintainer**]{.underline}
+### **maintainer**
 
 - **Cardinality:** Optional
 - **Content:** [Person](#sec-person) or [Organization](#sec-organization)
 - **Description:** Identification of the agent that maintains the metadata, with contact information. Should include person name and affiliation, or position name and affiliation, or just organization name. e-mail address is preferred contact information.
 
-### [**sdDatePublished**]{.underline}
+### **sdDatePublished**
 
 - **Cardinality:** Optional
 - **Content:** ISO 8601 formatted date/datetime
 - **Description:** date of most recent update to the metadata content
 
-### [**includedInDataCatalog**]{.underline}
+### **includedInDataCatalog**
 
 - **Cardinality:** Optional
 - **Content:** [DataCatalog](#sec-datacatalog)
@@ -273,29 +273,29 @@ The information model for the base core profile is defined in the cdifBook. This
 
 ## Defined Term {#sec-definedterm}
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'DefinedTerm', Repeatable
 - **Content:** string.uri
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Required if no identifier or termCode
 - **Content:** string
 - **Description:** label for the term
 
-### [**identifier**]{.underline}
+### **identifier**
 
 - **Cardinality:** Required if no name or termCode
 - **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
 
-### [**termCode**]{.underline}
+### **termCode**
 
 - **Cardinality:** Required if no name or identifier
 - **Content:** string
 - **Description:** A representative code for this keyword in the controlled vocabulary. Analogous to skos:Notation
 
-### [**inDefinedTermSet**]{.underline}
+### **inDefinedTermSet**
 
 - **Cardinality:** Optional
 - **Content:** string
@@ -305,24 +305,24 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - Use to document the URL that is the target for invoking an action, or that is the target object of a link relationship.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – "EntryPoint", Repeatable
 - **Content:** string. Uri
 
-### [**encodingFormat**]{.underline}
+### **encodingFormat**
 
 - **Cardinality:** Optional
 - **Content:** string, MIME Type
 - **Description:** MIME type / media type identifier for the representation returned from the URL.
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Label for the resource located by the URL
 
-### [**url**]{.underline}
+### **url**
 
 - **Cardinality:** Required
 - **Content:** string.url
@@ -330,24 +330,24 @@ The information model for the base core profile is defined in the cdifBook. This
 
 ## Labeled Link {#sec-labeledlink}
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'CreativeWork', Repeatable
 - **Content:** string.uri
 
-### [**url**]{.underline}
+### **url**
 
 - **Cardinality:** Required
 - **Content:** string:uri
 - **Description:** URL for web location to GET the resource
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Label for the linked resource
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
@@ -357,18 +357,18 @@ The information model for the base core profile is defined in the cdifBook. This
 
 - This is the type used for links that have an associated semantic conveyed by the linkRelationship.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'LinkRole', Repeatable
 - **Content:** string.uri
 
-### [**linkRelationship**]{.underline}
+### **linkRelationship**
 
 - **Cardinality:** Required
 - **Content:** string or [DefinedTerm](#sec-definedterm)
 - **Description:** Term that specifies the relationship between the source and target of the link.
 
-### [**target**]{.underline}
+### **target**
 
 - **Cardinality:** Required
 - **Content:** [EntryPoint](#sec-entrypoint)
@@ -376,31 +376,31 @@ The information model for the base core profile is defined in the cdifBook. This
 
 ## MonetaryGrant {#sec-monetarygrant}
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required -- 'MonetaryGrant', Repeatable
 - **Content:** string.uri
 
 CHOICE (at least one of identifier, name, or funder
 
-### [**identifier**]{.underline}
+### **identifier**
 
 - **Cardinality:** Required if no name or funder
 - **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
 - **Description:** identifier for a particular grant
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Required if no identifer or funder
 - **Content:** string
 - **Description:** title of the grant
 
-### [**funder**]{.underline}
+### **funder**
 
 - **Cardinality:** Required if no identifier or name
 - **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
@@ -408,97 +408,97 @@ CHOICE (at least one of identifier, name, or funder
 
 ## Optional Dataset properties
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Abstract describing the content, format, origin, quality or any other aspects of the resource that might be useful to future users evaluating the resource for usage.
 
-### [**additionalType**]{.underline}
+### **additionalType**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string or [DefinedTerm](#sec-definedterm)
 - **Description:** Use to assert semantics for the JSON object using concepts from other vocabularies. Type assertions here are purely for semantic information, and do not imply presence of properties assigned to a class in some other vocabulary.
 
-### [**sameAs**]{.underline}
+### **sameAs**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference), or [PropertyValue](#sec-propertyvalue)
 - **Description:** Other identifiers for the dataset, as IRI references, literal strings, or structured identifiers using schema:PropertyValue.
 
-### [**version**]{.underline}
+### **version**
 
 - **Cardinality:** Optional
 - **Content:** string or number
 - **Description:** The version number or identifier for this dataset (text or numeric). The values should sort from oldest to newest using an alphanumeric sort on version strings
 
-### [**inLanguage**]{.underline}
+### **inLanguage**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** The language of the dataset content. Use [ISO 639 code](https://www.loc.gov/standards/iso639-2/php/code_list.php) for language or language:locale
 
-### [**datePublished**]{.underline}
+### **datePublished**
 
 - **Cardinality:** Optional
 - **Content:** string, [ISO 8601 format](https://en.wikipedia.org/wiki/ISO_8601)
 - **Description:** ISO8601 formatted date (and optional time if relevant) when Dataset was made public.
 
-### [**relatedLink**]{.underline}
+### **relatedLink**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [LinkRole](#sec-linkrole)
 - **Description:** links to related resources; linkRelationship specifies how the resource is related. Use schema.org LinkRole type for values, with a linkRelationship and target that documents the url and encoding format of the linked content.
 
-### [**publishingPrinciples**]{.underline}
+### **publishingPrinciples**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference), or [LabeledLink](#sec-labeledlink)
 - **Description:** Policies related to maintenance, update, expected time to live, e.g. FDOF digitalObjectMutability, RDA digitalObjectPolicy, FDOF PersistencyPolicy. If an online resource documents the policies or a URI is used to identify the conditions, recommend using [LabeledLink](#sec-labeledlink), implemented as schema:CreativeWork to provide a label (name) and an identifier (URI or URL).
 
-### [**keywords**]{.underline}
+### **keywords**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string or [DefinedTerm](#sec-definedterm)
 - **Description:** Keywords are an array of strings, an array of schema:DefinedTerms, or some combination of these. If you have information about a controlled vocabulary from which keywords come from, use schema:DefinedTerm to descibe that keyword. This allowed variability complicates parsing the metadata record; recommend using DefinedTerm for all keywords if any of them are from a known vocabulary, otherwise an array of strings.
 
-### [**creator**]{.underline}
+### **creator**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** List of [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
 - **Description:** Author or orginator of intellectual content of dataset. Use the JSON-LD @list construct to preserve author order. Use contributor with the Role property to specify other roles related to creation or stewardship of the resource.
 
-### [**contributor**]{.underline}
+### **contributor**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
 - **Description:** Other parties who played a role in production of dataset
 
-### [**publisher**]{.underline}
+### **publisher**
 
 - **Cardinality:** Optional
 - **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
 - **Description:** Identify Party who made the dataset publicly available
 
-### [**provider**]{.underline}
+### **provider**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [object reference](#object-reference), [Person](#sec-person), or [Organization](#sec-organization)
 - **Description:** Party who maintains the distribution options for the dataset (i.e. the hosting web server). If there are multiple distributions from different providers, use the provider property on distribution/DataDownload. Contact information for the provider is important if there are malfunctions in the data access workflow.
 
-### [**funding**]{.underline}
+### **funding**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** [MonetaryGrant](#sec-monetarygrant)
 - **Description:** Acknowledgement for sources of financial or other material resources important for the creation of the described resource. Allows identification of specific funding instruments (grants, contracts, scholarships…) or institutions providing resources.
 
-### [**prov: wasGeneratedBy**]{.underline}
+### **prov: wasGeneratedBy**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** prov:Activity/prov:used
 - **Description:** For Discovery profile provide brief information about instruments, software or experimental protocols used, using the value of prov:used either a string or [object reference](#object-reference).
 
-### [**prov: wasDerivedFrom**]{.underline}
+### **prov: wasDerivedFrom**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference), [LabeledLink](#sec-labeledlink)
@@ -506,46 +506,46 @@ CHOICE (at least one of identifier, name, or funder
 
 ## Organization {#sec-organization}
 
-### [**@id**]{.underline}
+### **@id**
 
 - **Cardinality:** Optional
 - **Content:** string.uri
 - **Description:** Identifier for this graph node. Useful to reference this Organization using object references if they appear more that once in the metadata record.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'Organization', Repeatable
 - **Content:** string.uri
 - **Description:** rdf:type, list must include Organization, but other schema.org types can be added for more precision: FundingAgency, Consortium, Corporation, EducationalOrganization, FundingScheme, GovernmentOrganization, NGO, Project, ResearchOrganization, defined by enumeration in the schema.
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Required if no identifier
 - **Content:** string
 - **Description:** Label for the Organization
 
-### [**identifier**]{.underline}
+### **identifier**
 
 - **Cardinality:** Required if no name
 - **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
 
-### [**additionalType**]{.underline}
+### **additionalType**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string or [DefinedTerm](#sec-definedterm)
 
-### [**alternateName**]{.underline}
+### **alternateName**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** other labels by which the organization might be known
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
 
-### [**sameAs**]{.underline}
+### **sameAs**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference)
@@ -556,78 +556,78 @@ CHOICE (at least one of identifier, name, or funder
 
 - Object representing a person.
 
-### [**@id**]{.underline}
+### **@id**
 
 - **Cardinality:** Optional
 - **Content:** string.uri
 - **Description:** Identifier for this graph node. Useful to reference this Person using object references if they appear more that once in the metadata record.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'Person', Repeatable
 - **Content:** string.uri
 - **Description:** rdf:type for this JSON-LD object.
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Required if no identifier
 - **Content:** string
 - **Description:** Label for person that is meaningful for human users, should format consistently. Recommend 'Family Name, Given Name' format.
 
-### [**identifier**]{.underline}
+### **identifier**
 
 - **Cardinality:** Required if no name
 - **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Other useful information about the person.
 
-### [**alternateName**]{.underline}
+### **alternateName**
 
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Other names by which the person is known.
 
-### [**affiliation**]{.underline}
+### **affiliation**
 
 - **Cardinality:** Optional
 - **Content:** [Organization](#sec-organization)
 - **Description:** Organization that the person is associated with.
 
-### [**contactPoint**]{.underline}
+### **contactPoint**
 
 - **Cardinality:** Optional
 - **Content:** [ContactPoint](#sec-contactpoint)
 - **Description:** email is required property if a contactPoint is included. Schema.org allows telephone and postal contacts as well.
 
-### [**sameAs**]{.underline}
+### **sameAs**
 
 - **Cardinality:** Optional, Repeatable
 - **Content:** string, [object reference](#object-reference)
 
 ## PropertyValue-(identifier) {#sec-propertyvalue}
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'PropertyValue', Repeatable
 - **Content:** string.uri
 
-### [**value**]{.underline}
+### **value**
 
 - **Cardinality:** Required if no url
 - **Content:** string
 - **Description:** the identifier string. E.g. 10.5066/F7VX0DMQ
 
-### [**url**]{.underline}
+### **url**
 
 - **Cardinality:** Required if no value
 - **Content:** string.url
 - **Description:** web-resolveable string for the identifier; host name part is location of a resolver that will return some representation for the given identifier value. E.g. https://doi.org/10.5066/F7VX0DMQ
 
-### [**propertyID**]{.underline}
+### **propertyID**
 
 - **Cardinality:** Optional
 - **Content:** string:uri
@@ -637,29 +637,29 @@ CHOICE (at least one of identifier, name, or funder
 
 - Description of the kind of value expected for a parameter value.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – 'PropertyValueSpecification', repeatable
 
-### [**valueName**]{.underline}
+### **valueName**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** This will be used to match the specification to parameters in a template string used to construct a query.
 
-### [**description**]{.underline}
+### **description**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** Explanation of the purpose of the parameter, its range of values, datatype, etc.
 
-### [**valueRequired**]{.underline}
+### **valueRequired**
 
 - **Cardinality:** Optional
 - **Content:** boolean
 - **Description:** Default is true. False if the specified parameter is not required to fill the template.
 
-### [**valuePattern**]{.underline}
+### **valuePattern**
 
 - **Cardinality:** Optional
 - **Content:** string
@@ -667,31 +667,31 @@ CHOICE (at least one of identifier, name, or funder
 
 ## Required Properties from cdif Core profile
 
-### [**@id**]{.underline}
+### **@id**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** This is an identifier for this node in an rdf graph. JSON-LD key is @id.
 
-### [**@type**]{.underline}
+### **@type**
 
 - **Cardinality:** Required – "Dataset", Repeatable
 - **Content:** string.uri
 - **Description:** The type property specifies the rdf:type classification. For this implementation, the type is represented with the JSON-LD @type property, and must include 'Dataset'. JSON-LD key is @type. Type assertions here should be understood to imply the usage of properties associated with the identified type, whether from schema.org or other vocabularies that might define the type.
 
-### [**name**]{.underline}
+### **name**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** A descriptive name of a dataset (e.g., 'Snow depth in Northern Hemisphere'). The name should uniquely identify the described resource for human use, in the scope of the metadata catalog containing this metadata record. Schema.org property, in namespace 'http://schema.org/'.
 
-### [**identifier**]{.underline}
+### **identifier**
 
 - **Cardinality:** Required
 - **Content:** string.uri or [PropertyValue-(identifier)](#sec-propertyvalue)
 - **Description:** The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namespace 'http://schema.org/'.
 
-### [**dateModified**]{.underline}
+### **dateModified**
 
 - **Cardinality:** Required
 - **Content:** string, ISO 8601 format
@@ -699,13 +699,13 @@ CHOICE (at least one of identifier, name, or funder
 
 CHOICE at least one of two options:
 
-### [**conditionsOfAccess**]{.underline}
+### **conditionsOfAccess**
 
 - **Cardinality:** Required if no license, Repeatable
 - **Content:** string, [object reference](#object-reference), or [LabeledLink](#sec-labeledlink)
 - **Description:** Text statement of conditions for use and access; if an online resource documents the restrictions or a URI is used to identify the conditions, recommend using the LabeledLink option, implemented as schema:CreativeWork, to provide a label (name) and an identifier (URI or URL).
 
-### [**license**]{.underline}
+### **license**
 
 - **Cardinality:** Required if no conditionsOfAccess
 - **Content:** string, [object reference](#object-reference), or [LabeledLink](#sec-labeledlink)
@@ -713,19 +713,19 @@ CHOICE at least one of two options:
 
 CHOICE at least one of two options:
 
-### [**url**]{.underline}
+### **url**
 
 - **Cardinality:** Required if no distribution
 - **Content:** string.uri
 - **Description:** Web Location of a page describing the dataset (landing page), typically providing links or instructions to get the actual resource content; analogous to dcat:landingPage. If a direct link is available to get the data, put in distribution/DataDownload/contentUrl, that is equivalent to dcat:accessURL
 
-### [**distribution**]{.underline}
+### **distribution**
 
 - **Cardinality:** Required if no url
 - **Content:** [DataDownload](#sec-datadownload) or [WebAPI](#sec-webapi)
 - **Description:** specifies how to download the data in a specific format or access via a web API. This property describes where to get the data and in what format by using the schema:DataDownload type. If user must access data through a landing page, provide link to landing page in the 'url' property for the dataset, not a distribution contentUrl.
 
-### [**subjectOf**]{.underline}
+### **subjectOf**
 
 - **Cardinality:** Required
 - **Content:** [Dataset/dcat:CatalogRecord](#sec-catalogrecord)
@@ -733,13 +733,13 @@ CHOICE at least one of two options:
 
 ## spdx:Checksum {#sec-spdxchecksum}
 
-### [**spdx:algorithm**]{.underline}
+### **spdx:algorithm**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** Name or identifier for the algorithm used to calculate the checksum.
 
-### [**spdx: checksumValue**]{.underline}
+### **spdx: checksumValue**
 
 - **Cardinality:** Required
 - **Content:** string
@@ -749,25 +749,25 @@ CHOICE at least one of two options:
 
 - Provides information to request data through a web accessible service endpoint. This implementation uses the schema.org Action to document url or url template and parameters. At this point, schema is set up for one action-- an HTTP Get that requests data. The url template parameters (in curly brackets '{}') specify query parameters to filter the source data, request particular output formats or other options offered by the interface.
 
-### [**serviceType**]{.underline}
+### **serviceType**
 
 - **Cardinality:** Required
 - **Content:** string or [DefinedTerm](#sec-definedterm)
 - **Description:** Specify the kind of service. Ideally this should be a resolvable identifier. Currently there is no widely adopted registry for serviceType identifiers. Services might be defined at different levels of granularity, and classifications might focus on function, data formats, thematic content, security, or other aspects of the service definition. For interoperability, there must be an external arrangement between data providers and consumers on the strings that will be used to specify service types.
 
-### [**termsOfService**]{.underline}
+### **termsOfService**
 
 - **Cardinality:** Required, Repeatable
 - **Content:** string or [LabeledLink](#sec-labeledlink)
 - **Description:** Description of access privileges required to use the API, e.g. registration, licensing, payments. Note that access constraints applying to all distributions of the resource should be specified in the access constraints for the resource description as a whole.
 
-### [**documentation**]{.underline}
+### **documentation**
 
 - **Cardinality:** Optional
 - **Content:** string or [LabeledLink](#sec-labeledlink)
 - **Description:** A machine-actionable description of a service instance. Examples include OpenAPI documents, OGC Capabilities documents. Software designed to utilise a particular service type will typically include functionality to parse such a description document and engage with the service endpoint. If such a document is available for the service instance providing the resource distribution, it should be included in the distribution metadata.
 
-### [**potentialAction**]{.underline}
+### **potentialAction**
 
 - **Cardinality:** Required, Repeatable
 - **Content:** [object reference](#object-reference), [Action](#sec-action)
