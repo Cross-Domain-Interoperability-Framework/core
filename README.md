@@ -81,6 +81,11 @@ The script uses **`cdifCore-frame.jsonld`** to frame JSON-LD documents into the 
 - **[metadataBuildingBlocks](https://github.com/Cross-Domain-Interoperability-Framework/metadataBuildingBlocks)** — Source building block schemas, SHACL rules, and profile definitions
 - **[validation](https://github.com/Cross-Domain-Interoperability-Framework/validation)** — Framing, batch validation, conformance checking, harvesting, and DCAT conversion tools
 
+## Development branch
+
+Active work for the 2026-06 review revision is on the `reviewRevision202606` branch. `main` reflects the prior release state. New changes should target the review branch; it is merged to main on release.
+
+
 ## License
 
 See [LICENSE](LICENSE).
