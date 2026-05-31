@@ -41,15 +41,23 @@ The JSON syntax is defined by the [ECMA JSON specification](https://www.ecma-in
 
 # Model
 
+[↑ Back to TOC](#table-of-contents)
+
 The information model for the base core profile is defined in the [cdifBook](). This section outlines a logical model focused on a JSON-LD implementation of the content items defined in the information model. All classes and properties are implemented with schema.org types and attributes unless there is a prefix indicating use of elements from other vocabularies. See the context section for prefixes used and their mapping to URIs.
 
 # Notes on schema.org implementation
 
+[↑ Back to TOC](#table-of-contents)
+
 ## JSON-LD @type
+
+[↑ Back to TOC](#table-of-contents)
 
 JSON-LD every graph node has a @type property that specifies the rdf:type for the node. This type has implications for the properties expected to be found in the content of the node, and should convey the intention of the kind of thing the node is intended to represent. In the CDIF JSON-LD implementation, most of the @types are taken from the schema.org vocabulary, but there are a few exceptions for content items that do not map to the schema.org vocabulary. The @type is always serialized as an array [JSON list] to allow for extensions that add additional typing.
 
 ## Object reference
+
+[↑ Back to TOC](#table-of-contents)
 
 Linked data is implemented in rdf using URIs to reference objects that might be located in other parts of a graph, or remotely and accessed online. In the JSON-LD implementation, simply using a URI string as the value of a property does not create such a link—the value is simply a string, not the object reference by the URI. An "object ref" is always a string containing the id of the referenced object. Thus
 
@@ -63,15 +71,21 @@ Is the correct syntax to implemenat an object reference. Throughout this documen
 
 ## Repeating values
 
+[↑ Back to TOC](#table-of-contents)
+
 Any property with a 1..\* or 0..\* cardinality has values that are always implemented as arrays. This makes client processing easier because tests for single or array values are not necessary. If a property is ‘repeatable’, then assume the implementation is an array (JSON list).
 
 ## Namespace prefixes and JSON validation.
+
+[↑ Back to TOC](#table-of-contents)
 
 Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure -- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as "schema:name", "name", or "http://schema.org/name" depending on the @context. A JSON Schema that checks for "schema:name" will reject a document that uses "name", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents.
 
 The JSON Schema validates **one metadata record at a time**: the document root must be a single `schema:Dataset` node with the mandatory properties at the top level. A multi-record bundle packaged as `{ "@graph": [ ... ] }` -- the natural output of many harvesters and federated catalogs -- will fail JSON Schema validation immediately, because `@graph` is not in the schema's property list. This is purely a packaging mismatch: the bundled records may be perfectly valid individually, and SHACL (which operates on the RDF graph rather than the JSON tree) will still pass them. Before JSON-Schema validation, extract each `schema:Dataset` record from the graph using JSON-LD framing. The `FrameAndValidate.py` script and `cdifCore-frame.jsonld` frame in this repository do exactly this -- framing a document against the CDIF frame and extracting the dataset node out of `@graph` -- and can be run with `--validate` to frame and JSON-Schema-validate in one step.
 
 ## Use of dcat:CatalogRecord
+
+[↑ Back to TOC](#table-of-contents)
 
 In a harvesting/federated catalog system some metadata about the metadata is useful to keep track of where metadata came from, what format/profile it uses (harvesters need this to process), and update dates. Unambiguous expression of this information requires making statements about a metadata record distinct from the thing in the world that the metadata describes. In an RDF framework, this requires a distinct identifier for the metadata record object that will serve as the subject for these triples.
 
@@ -112,6 +126,8 @@ To address this issue, CDIF recommends that statements about the metadata record
 *Example: Instance with dcat CatalogRecord content (mapped to schema.org properties)*
 
 ## Polymorphism of PropertyValue
+
+[↑ Back to TOC](#table-of-contents)
 
 The schema.org PropertyValue type is used in several different contexts in the implementation of CDIF metadata. This is a result of how the expected values for some important properties are defined in schema.org. In the Discovery profile, PropertyValue is an allowed value type for variableMeasured and for identifier. In some more advanced profiles, PropertyValue is also an allowed value for additionalProperty.
 
@@ -266,6 +282,8 @@ number</td>
 
 # Namespaces
 
+[↑ Back to TOC](#table-of-contents)
+
 -Namespace prefixes use in CDIF Core schema.org JSON-LD objects are specified by this JSON-LD context, which must be declared in every instance document. Note that the correct namespace URI for schema.org is ‘http’, not ‘https’. The https://schema.org/ uri identifies the schema.org context document, not the namespace. This example context includes all the namespaces used in any cdif profile:
 
 ```json
@@ -282,9 +300,13 @@ number</td>
 
 # Base Class DataSet
 
+[↑ Back to TOC](#table-of-contents)
+
 -This profile applies to description of resources that can be described using the properties defined in the CDIF core information model. For implementation using the schema.org vocabulary, these are typed as schema:Dataset.
 
 # Required Properties from cdif Core profile
+
+[↑ Back to TOC](#table-of-contents)
 
 ### **@id**
 
@@ -352,6 +374,8 @@ CHOICE at least one of two options:
 
 ## Action
 
+[↑ Back to TOC](#table-of-contents)
+
 ### **@type**
 
 - **Cardinality:** Required, Repeatable
@@ -365,28 +389,35 @@ CHOICE at least one of two options:
 - **Description:** text label for the action
 
 ### **target**
+
 - **Cardinality:** Required
 - **Content:** [EntryPoint](#entrypoint)
 - **Description:** specifies the request target location and request syntax
 
 ### **result**
+
 - **Cardinality:** Optional
 - **Content:** [DataDownload](#data-download)
 - **Description:** specifies the serialization scheme (encoding format, information model) for expected representation of the data
 
 ### **object**
+
 - **Cardinality:** Optional
 - **Content:** Thing
 - **Description:** Specifies the resource that is the object (input) of the action. The value is an open ended class (Thing can be anything…) for general description of Actions. When schema:Action (or a subclass) is used to descibe operations for a WebAPI distribution (the normal CDIF usage), the object is implicitly the resource that is the subject of the containing metadata record, so this property would be superfluous.
 
 ### **query-input**
+
 - **Cardinality:** Optional, Repeatable
 - **Content:** [PropertyValueSpecification](#propertyvaluespecification)
 - **Description:** set of explanations of the parameters in the URL template for the target EntryPoint.
 
 # Optional Dataset properties
 
+[↑ Back to TOC](#table-of-contents)
+
 ### **description**
+
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** Abstract describing the content, format, origin, quality or any other aspects of the resource that might be useful to future users evaluating the resource for usage.
@@ -483,7 +514,11 @@ CHOICE at least one of two options:
 
 # Other Classes used for CDIF Core
 
+[↑ Back to TOC](#table-of-contents)
+
 ## Data Download
+
+[↑ Back to TOC](#table-of-contents)
 
 - file-based access to a resource via URL; the DataDownload object provides a link to get the resource content, along with information about the serialization format and conventions used.
 
@@ -543,6 +578,8 @@ CHOICE at least one of two options:
 
 ## DataCatalog
 
+[↑ Back to TOC](#table-of-contents)
+
 - An accessible collection of data. The data might be metadata (about other resources) or datasets.
 
 ### **@type**
@@ -576,6 +613,8 @@ CHOICE at least one of two options:
 
 ## MonetaryGrant
 
+[↑ Back to TOC](#table-of-contents)
+
 ### **@type**
 
 - **Cardinality:** Required -- 'MonetaryGrant', Repeatable
@@ -607,6 +646,8 @@ CHOICE (at least one of identifier, name, or funder
 - **Description:** description of the funding or grant
 
 ## Organization
+
+[↑ Back to TOC](#table-of-contents)
 
 ### **@id**
 
@@ -653,6 +694,8 @@ CHOICE (at least one of identifier, name, or funder
 - **Content:** string, [object reference](#object-reference)
 
 ## Person
+
+[↑ Back to TOC](#table-of-contents)
 
 - Object representing a person.
 
@@ -710,6 +753,8 @@ CHOICE (at least one of identifier, name, or funder
 
 ## PropertyValueSpecification
 
+[↑ Back to TOC](#table-of-contents)
+
 - Description of the kind of value expected for a parameter value.
 
 ### **@type**
@@ -742,6 +787,8 @@ CHOICE (at least one of identifier, name, or funder
 
 ## Web API
 
+[↑ Back to TOC](#table-of-contents)
+
 - Provides information to request data through a web accessible service endpoint. This implementation uses the schema.org Action to document url or url template and parameters. At this point, schema is set up for one action-- an HTTP Get that requests data. The url template parameters (in curly brackets '{}') specify query parameters to filter the source data, request particular output formats or other options offered by the interface.
 
 ### **serviceType**
@@ -770,29 +817,39 @@ CHOICE (at least one of identifier, name, or funder
 
 # Data types used for CDIF Core
 
+[↑ Back to TOC](#table-of-contents)
+
 ## ContactPoint
+
+[↑ Back to TOC](#table-of-contents)
 
 - Information about how to communicate with a person or organization. CDIF only includes e-mail in its schema.
 
 ### **@type**
+
 - **Cardinality:** Required – 'ContactPoint', Repeatable
 - **Content:** string.uri
 
 ### **email**
+
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** Property is required if a contactPoint property is included. Use missing@example.org if e-mail address is not available. Recommend using position-based contact point because people move around.
 
 ## Contributor
 
+[↑ Back to TOC](#table-of-contents)
+
 - For more granularity on how an agent contributed to a resource, use schema:Role. The schema.org documentation does not state that the Role type is an expected data type for the contributor property, but that is addressed in this blog post (http://blog.schema.org/2014/06/introducing-role.html). see also [ESIPfed Science on Schema.org roles of people note](https://github.com/ESIPFed/science-on-schema.org/blob/develop/guides/Dataset.md#roles-of-people).
 
 ### **@type**
+
 - **Cardinality:** Required -- 'Role', Repeatable
 - **Content:** string.uri
 - **Description:** rdf:type
 
 ### **roleName**
+
 - **Cardinality:** Required
 - **Content:** string, [DefinedTerm](#defined-term)
 - **Description:** term that specifies the relationship between the contributor and the described resource.
@@ -804,52 +861,65 @@ CHOICE (at least one of identifier, name, or funder
 
 ## dcat:CatalogRecord
 
+[↑ Back to TOC](#table-of-contents)
+
 - This is the class used to provide information about the metadata record itself.
 
 ### **@id**
+
 - **Cardinality:** Required
 - **Content:** string.uri
 - **Description:** Identifier for the metadata record.
 
 ### **@type**
+
 - **Cardinality:** Required – "Dataset", Repeatable
 - **Content:** string.uri
 
 ### **additionalType**
+
 - **Cardinality:** Required – "dcat:CatalogRecord", Repeatable
 - **Content:** string
 
 ### **about**
+
 - **Cardinality:** Required
 - **Content:** [object reference](#object-reference)
 - **Description:** This must be a reference to the metadata record that this node documents, using the @id of that record.
 
 ### **conformsTo**
+
 - **Cardinality:** Required, Repeatable
 - **Content:** [object reference](#object-reference)
 - **Description:** Identifiers for conformance classes/profiles that the metadata record follows. For CDIF Core this must include 'https://w3id.org/cdif/core/1.0'; a record that also conforms to a higher-level profile (e.g. Discovery) lists that profile's identifier as well.
 
 ### **description**
+
 - **Cardinality:** Optional
 - **Content:** string
 - **Description:** other information about the metadata record that might be useful.
 
 ### **maintainer**
+
 - **Cardinality:** Optional
 - **Content:** [Person](#person) or [Organization](#organization)
 - **Description:** Identification of the agent that maintains the metadata, with contact information. Should include person name and affiliation, or position name and affiliation, or just organization name. e-mail address is preferred contact information.
 
 ### **sdDatePublished**
+
 - **Cardinality:** Optional
 - **Content:** ISO 8601 formatted date/datetime
 - **Description:** date of most recent update to the metadata content
 
 ### **includedInDataCatalog**
+
 - **Cardinality:** Optional
 - **Content:** [DataCatalog](#datacatalog)
 - **Description:** identify the source for the origin the metadata record
 
 ## Defined Term
+
+[↑ Back to TOC](#table-of-contents)
 
 ### **@type**
 
@@ -881,6 +951,8 @@ CHOICE (at least one of identifier, name, or funder
 
 ## EntryPoint
 
+[↑ Back to TOC](#table-of-contents)
+
 - Use to document the URL that is the target for invoking an action, or that is the target object of a link relationship.
 
 ### **@type**
@@ -908,6 +980,8 @@ CHOICE (at least one of identifier, name, or funder
 
 ## Labeled Link
 
+[↑ Back to TOC](#table-of-contents)
+
 ### **@type**
 
 - **Cardinality:** Required – 'CreativeWork', Repeatable
@@ -933,6 +1007,8 @@ CHOICE (at least one of identifier, name, or funder
 
 ## LinkRole
 
+[↑ Back to TOC](#table-of-contents)
+
 - This is the type used for links that have an associated semantic conveyed by the linkRelationship.
 
 ### **@type**
@@ -953,6 +1029,8 @@ CHOICE (at least one of identifier, name, or funder
 - **Description:** URL for link target, along with a label and encoding format for the target resource.
 
 ## PropertyValue-(identifier)
+
+[↑ Back to TOC](#table-of-contents)
 
 ### **@type**
 
@@ -979,6 +1057,8 @@ CHOICE (at least one of identifier, name, or funder
 
 ## spdx:Checksum
 
+[↑ Back to TOC](#table-of-contents)
+
 ### **spdx:algorithm**
 
 - **Cardinality:** Required
@@ -990,4 +1070,3 @@ CHOICE (at least one of identifier, name, or funder
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** the checksum string.
-
