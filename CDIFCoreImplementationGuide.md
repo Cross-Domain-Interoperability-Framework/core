@@ -1,5 +1,4 @@
 # CDIF Core Classes and Properties
-# CDIF Core Classes and Properties
 
 2026-04-05
 
