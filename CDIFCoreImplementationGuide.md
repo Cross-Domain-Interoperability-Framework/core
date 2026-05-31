@@ -1,4 +1,5 @@
 # CDIF Core Classes and Properties
+# CDIF Core Classes and Properties
 
 2026-04-05
 
@@ -43,17 +44,13 @@ The JSON syntax is defined by the [ECMA JSON specification](https://www.ecma-in
 
 [↑ Back to TOC](#table-of-contents)
 
-The information model for the base core profile is defined in the [cdifBook](). This section outlines a logical model focused on a JSON-LD implementation of the content items defined in the information model. All classes and properties are implemented with schema.org types and attributes unless there is a prefix indicating use of elements from other vocabularies. See the context section for prefixes used and their mapping to URIs.
+The information model for the base core profile is defined in the [cdifBook](https://cross-domain-interoperability-framework.github.io/cdifbook/preview-2026-05/metadata/core/#information-model). This section outlines a logical model focused on a JSON-LD implementation of the content items defined in the information model. All classes and properties are implemented with schema.org types and attributes unless there is a prefix indicating use of elements from other vocabularies. See the context section for prefixes used and their mapping to URIs.
 
 # Notes on schema.org implementation
 
-[↑ Back to TOC](#table-of-contents)
-
 ## JSON-LD @type
 
-[↑ Back to TOC](#table-of-contents)
-
-JSON-LD every graph node has a @type property that specifies the rdf:type for the node. This type has implications for the properties expected to be found in the content of the node, and should convey the intention of the kind of thing the node is intended to represent. In the CDIF JSON-LD implementation, most of the @types are taken from the schema.org vocabulary, but there are a few exceptions for content items that do not map to the schema.org vocabulary. The @type is always serialized as an array [JSON list] to allow for extensions that add additional typing.
+JSON-LD every graph node has a \@type property that specifies the rdf:type for the node. This type has implications for the properties expected to be found in the content of the node, and should convey the intention of the kind of thing the node is intended to represent. In the CDIF JSON-LD implementation, most of the \@types are taken from the schema.org vocabulary, but there are a few exceptions for content items that do not map to the schema.org vocabulary. The \@type is always serialized as an array [JSON list] to allow for extensions that add additional typing.
 
 ## Object reference
 
@@ -79,7 +76,7 @@ Any property with a 1..\* or 0..\* cardinality has values that are always implem
 
 [↑ Back to TOC](#table-of-contents)
 
-Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure -- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as "schema:name", "name", or "http://schema.org/name" depending on the @context. A JSON Schema that checks for "schema:name" will reject a document that uses "name", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents.
+Namespace prefixes are explicitly used in the example documents so that the JSON schema can validate instance documents. JSON Schema validates the literal JSON structure -- property names, nesting, value types. Several features of JSON-LD can cause a semantically correct document to fail JSON Schema checks. The same property can appear as "schema:name", "name", or "http://schema.org/name" depending on the \@context. A JSON Schema that checks for "schema:name" will reject a document that uses "name", even though both mean the same thing. See [Validating CDIF Profile Metadata](https://github.com/Cross-Domain-Interoperability-Framework/validation/blob/main/docs/CDIF-profiles-metadata-validation.md) for a detailed discussion of validation processes for CDIF metadata, and the use of framing to validate JSON-LD instances using different [JSON-LD forms](https://www.w3.org/TR/json-ld11/#forms-of-json-ld) or custom context documents.
 
 The JSON Schema validates **one metadata record at a time**: the document root must be a single `schema:Dataset` node with the mandatory properties at the top level. A multi-record bundle packaged as `{ "@graph": [ ... ] }` -- the natural output of many harvesters and federated catalogs -- will fail JSON Schema validation immediately, because `@graph` is not in the schema's property list. This is purely a packaging mismatch: the bundled records may be perfectly valid individually, and SHACL (which operates on the RDF graph rather than the JSON tree) will still pass them. Before JSON-Schema validation, extract each `schema:Dataset` record from the graph using JSON-LD framing. The `FrameAndValidate.py` script and `cdifCore-frame.jsonld` frame in this repository do exactly this -- framing a document against the CDIF frame and extracting the dataset node out of `@graph` -- and can be run with `--validate` to frame and JSON-Schema-validate in one step.
 
@@ -91,9 +88,9 @@ In a harvesting/federated catalog system some metadata about the metadata is use
 
 In the RDF serialization, [Schema.org](http://schema.org/) metadata records are [JSON-LD node objects](https://www.w3.org/TR/json-ld/#node-objects), and include an "@id" keyword with a value that identifies the node, analogous to a primary key in a relational database. This identifier can be interpreted to represent a thing in the world that the metadata record (the 'node') is about, or to represent the metadata record (a JSON object) itself.
 
-To avoid this ambiguity, CDIF adopts the convention that the [schema.org](http://schema.org/) identifier property is used to identify a thing in the world that is the subject of the JSON-LD node. The identified thing might be physical, imaginary, abstract, or a digital object. The JSON-LD @id property identifies a node in a graph, which is an abstract object. As a URI the @id URI is expected to dereference to produce a JSON-LD object containing the properties that are attached to the graph node.
+To avoid this ambiguity, CDIF adopts the convention that the [schema.org](http://schema.org/) identifier property is used to identify a thing in the world that is the subject of the JSON-LD node. The identified thing might be physical, imaginary, abstract, or a digital object. The JSON-LD \@id property identifies a node in a graph, which is an abstract object. As a URI the \@id URI is expected to dereference to produce a JSON-LD object containing the properties that are attached to the graph node.
 
-Given this convention, when the metadata record is processed, the processor should use the schema:identifier as subject of triples about the subject of the metadata record to avoid ambiguity. In addition, this convention would suggest that if a schema:identifier property is present, the @id property should be interpreted to identify the JSON object that is the representation of the node in the knowledge graph. In practice JSON-LD processors use the @id as the subject of triples generated from a JSON-LD object. A 'purist' approach would require a level of indirection to assert that the @id is about the thing identified by the schema:identifier. JSON-LD processors don't do this, so standard practice is to make the @id the identifier for the described resource, requiring understanding that it identifies two things—the rdf object at that graph node, and the thing in the world described by the content of that node. This has worked for the most part because metadata providers have been quite lax in providing information about the provenance of the metadata node, and in particular the conformance criteria that were followed in generating the content of that node.
+Given this convention, when the metadata record is processed, the processor should use the schema:identifier as subject of triples about the subject of the metadata record to avoid ambiguity. In addition, this convention would suggest that if a schema:identifier property is present, the \@id property should be interpreted to identify the JSON object that is the representation of the node in the knowledge graph. In practice JSON-LD processors use the \@id as the subject of triples generated from a JSON-LD object. A 'purist' approach would require a level of indirection to assert that the \@id is about the thing identified by the schema:identifier. JSON-LD processors don't do this, so standard practice is to make the \@id the identifier for the described resource, requiring understanding that it identifies two things—the rdf object at that graph node, and the thing in the world described by the content of that node. This has worked for the most part because metadata providers have been quite lax in providing information about the provenance of the metadata node, and in particular the conformance criteria that were followed in generating the content of that node.
 
 To address this issue, CDIF recommends that statements about the metadata record (the JSON object) as a distinct entity should be made using a separate identified node object. This node object is typed as a schema:Dataset, with additionalType [dcat:CatalogRecord](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record) recognizing that the DCAT v3 specification uses that element to address this precise issue. This node can be embedded in the Dataset metadata using the subjectOf property, and approach used in the accompanying JSON schema and examples, or implemented as a separate free standing graph node linked to the dataset object via the 'about' [object reference](#object-reference).
 
@@ -308,17 +305,17 @@ number</td>
 
 [↑ Back to TOC](#table-of-contents)
 
-### **@id**
+### **\@id**
 
 - **Cardinality:** Required
 - **Content:** string
 - **Description:** This is an identifier for this node in an rdf graph. JSON-LD key is @id.
 
-### **@type**
+### **\@type**
 
 - **Cardinality:** Required – "Dataset", Repeatable
 - **Content:** string.uri
-- **Description:** The type property specifies the rdf:type classification. For this implementation, the type is represented with the JSON-LD @type property, and must include 'Dataset'. JSON-LD key is @type. Type assertions here should be understood to imply the usage of properties associated with the identified type, whether from schema.org or other vocabularies that might define the type.
+- **Description:** The type property specifies the rdf:type classification. For this implementation, the type is represented with the JSON-LD \@type property, and must include 'Dataset'. JSON-LD key is \@type. Type assertions here should be understood to imply the usage of properties associated with the identified type, whether from schema.org or other vocabularies that might define the type.
 
 ### **name**
 
