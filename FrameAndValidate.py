@@ -134,6 +134,23 @@ def is_bare_id_reference(obj):
     return len(keys) == 1 and keys[0] == '@id'
 
 
+def _is_catalog_record(item):
+    """True if the item's schema:additionalType marks it as a catalog record.
+
+    The CDIF schema:subjectOf wrapper is itself @type=schema:Dataset (so the
+    Dataset frame matches it), but distinguished by
+    schema:additionalType containing 'dcat:CatalogRecord'. The main-dataset
+    picker uses this to skip the catalog-record entity."""
+    if not isinstance(item, dict):
+        return False
+    at = item.get('schema:additionalType')
+    if at is None:
+        return False
+    if isinstance(at, str):
+        at = [at]
+    return 'dcat:CatalogRecord' in at
+
+
 def remove_nulls_and_normalize(obj, parent_key=None):
     """
     Post-process the framed output to match schema expectations:
@@ -287,16 +304,27 @@ def frame_cdif_document(doc_path, frame_path=None):
     # Step 4: Extract main dataset from @graph if present
     result = framed
     if '@graph' in framed and isinstance(framed['@graph'], list):
-        # Find the main Dataset object - the one with schema:distribution or schema:url
+        # Find the main Dataset object. The frame matches @type=schema:Dataset,
+        # but the dataset's schema:subjectOf catalog record is also typed
+        # schema:Dataset (with schema:additionalType=dcat:CatalogRecord), so
+        # we skip catalog records first, then prefer the entity with
+        # schema:distribution, then schema:url, then fall back to the first
+        # non-catalog-record candidate.
+        candidates = [item for item in framed['@graph']
+                      if not _is_catalog_record(item)]
+
         dataset = None
-        for item in framed['@graph']:
-            # Check if this item has distribution (indicates it's the main dataset, not metadata record)
+        for item in candidates:
             if item.get('schema:distribution') is not None:
                 dataset = item
                 break
-            # Fallback: check for schema:url
             if item.get('schema:url') is not None and dataset is None:
                 dataset = item
+
+        # Fallback: take the first non-catalog-record candidate if neither
+        # distribution nor url was found (e.g. RO-Crate-sourced documents).
+        if dataset is None and candidates:
+            dataset = candidates[0]
 
         if dataset:
             result = {'@context': framed.get('@context'), **dataset}
