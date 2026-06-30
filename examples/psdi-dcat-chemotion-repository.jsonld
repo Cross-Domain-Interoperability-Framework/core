@@ -10,7 +10,7 @@
     "schema:Dataset"
   ],
   "schema:name": "Chemotion Repository",
-  "schema:description": "The Chemotion Repository is an open repository of well-structured and machine-readable chemical data created by the Karlsruhe Institute of Technology. The focus of the repository is synthetic and analytical chemistry data. It includes data pertaining to reactions, molecules and physical samples. Data in the repository is uploaded by the community, and is subject to peer review.",
+  "schema:description": "The Chemotion Repository is an open repository of well-structured and machine-readable chemical data created by the Karlsruhe Institute of Technology. The focus of the repository is synthetic and analytical chemistry data. It includes data pertaining to reactions, molecules and physical samples. Data in the repository is uploaded by the community, and is subject to peer review.; distributionDescription=Chemotion is available via PSDI Cross Data Search",
   "schema:identifier": "psdiDcat:data/06bdf98c-e51b-4656-a424-2c9e80b68c76",
   "schema:dateModified": "2021-06-25T00:00:00Z",
   "schema:datePublished": "2021-06-25T00:00:00Z",
@@ -96,16 +96,6 @@
     "schema:name": "Karlsruhe Institute of Technology",
     "@id": "http://ror.org/04t3en479/"
   },
-  "schema:distribution": [
-    {
-      "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:contentUrl": "{}",
-      "schema:name": "Chemotion Repository",
-      "schema:description": "Chemotion is available via PSDI Cross Data Search"
-    }
-  ],
   "dcterms:bibliographicCitation": "Please cite: Prof. Stefan Bräse, Dr. Nicole Jung, Dr. Pierre Tremouilhac, Pei-Chi Huang, Chia-Lin Lin, Dr. Yu-Chieh Huang, Dr. An Nguyen and Dr. Felix Bach. Chemotion Repository. Online. 25 June 2021. Available from: https://resources.psdi.ac.uk/data/06bdf98c-e51b-4656-a424-2c9e80b68c76. [accessed YYYY-MM-DD].",
   "schema:subjectOf": {
     "@type": [

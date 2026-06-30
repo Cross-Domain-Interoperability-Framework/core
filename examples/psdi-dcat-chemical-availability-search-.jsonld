@@ -10,7 +10,7 @@
     "schema:Dataset"
   ],
   "schema:name": "Chemical Availability Search (ChASe)",
-  "schema:description": "The Chemical Availability Search (ChASe) data source enables users to search and compare commercially available chemicals using the PSDI Cross Data Search service. Enter product or vendor keywords, CAS number, InChI or SMILES to search pricing and supplier information for over 250,000 unique chemicals from UK suppliers. Search results include product name, supplier name, quantity, purity, prices, CAS number, and catalogue number with a link to the supplier's website. \nCheck the supplier's website for the most up to date product information.",
+  "schema:description": "The Chemical Availability Search (ChASe) data source enables users to search and compare commercially available chemicals using the PSDI Cross Data Search service. Enter product or vendor keywords, CAS number, InChI or SMILES to search pricing and supplier information for over 250,000 unique chemicals from UK suppliers. Search results include product name, supplier name, quantity, purity, prices, CAS number, and catalogue number with a link to the supplier's website. \nCheck the supplier's website for the most up to date product information.; distributionDescription=Chemical Availability Search (ChASe) is available via PSDI Cross Data Search",
   "schema:identifier": "psdiDcat:data/e0e14403-1575-43db-a677-89aa515968e4",
   "schema:dateModified": "2020-09-27T00:00:00Z",
   "schema:datePublished": "2020-09-27T00:00:00Z",
@@ -55,16 +55,6 @@
     "schema:name": "PSDI",
     "@id": "http://www.psdi.ac.uk/"
   },
-  "schema:distribution": [
-    {
-      "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:contentUrl": "{}",
-      "schema:name": "Chemical Availability Search (ChASe)",
-      "schema:description": "Chemical Availability Search (ChASe) is available via PSDI Cross Data Search"
-    }
-  ],
   "schema:version": "1.0.0",
   "dcterms:bibliographicCitation": "Please cite: Science and Technology Facilities Council and University of Southampton. Chemical Availability Search (ChASe). Online. Version 1.0.0. 27 September 2020. Available from: https://resources.psdi.ac.uk/data/e0e14403-1575-43db-a677-89aa515968e4. [accessed YYYY-MM-DD].",
   "schema:subjectOf": {

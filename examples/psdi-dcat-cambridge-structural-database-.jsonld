@@ -53,15 +53,6 @@
     "schema:name": "Cambridge Crystallographic Data Centre",
     "@id": "http://ror.org/00zbfm828/"
   },
-  "schema:distribution": [
-    {
-      "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:contentUrl": "{}",
-      "schema:name": "Cambridge Structural Database (CSD)"
-    }
-  ],
   "dcterms:bibliographicCitation": "The preferred general citation to the Cambridge Structural Database is: \nThe Cambridge Structural Database\nC. R. Groom, I. J. Bruno, M. P. Lightfoot and S. C. Ward, Acta Cryst. (2016). B72, 171-179\nDOI: 10.1107/S2052520616003954",
   "schema:subjectOf": {
     "@type": [

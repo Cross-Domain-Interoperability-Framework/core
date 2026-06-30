@@ -20,14 +20,6 @@
   "schema:keywords": [
     "OPTIMADE provider"
   ],
-  "schema:distribution": [
-    {
-      "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:contentUrl": "{}"
-    }
-  ],
   "dcterms:bibliographicCitation": "Please cite: AFLOW. Online. Available from: https://resources.psdi.ac.uk/data/optimade-aflow-aflow. [accessed YYYY-MM-DD].",
   "schema:subjectOf": {
     "@type": [

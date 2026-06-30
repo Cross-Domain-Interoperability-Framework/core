@@ -23,14 +23,6 @@
   "schema:keywords": [
     "OPTIMADE provider"
   ],
-  "schema:distribution": [
-    {
-      "@type": [
-        "schema:DataDownload"
-      ],
-      "schema:contentUrl": "{}"
-    }
-  ],
   "dcterms:bibliographicCitation": "Please cite: Materials Cloud: MC3D (PBE-v1) - Materials Cloud 3D Structures Database. Online. Available from: https://resources.psdi.ac.uk/data/optimade-mcloud-mc3d-pbe-v1. [accessed YYYY-MM-DD].",
   "schema:subjectOf": {
     "@type": [
