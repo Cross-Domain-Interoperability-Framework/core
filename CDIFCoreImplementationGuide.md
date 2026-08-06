@@ -15,6 +15,7 @@ The JSON syntax is defined by the [ECMA JSON specification](https://www.ecma-in
   - [Repeating values](#repeating-values)
   - [Namespace prefixes and JSON validation.](#namespace-prefixes-and-json-validation)
   - [Use of dcat:CatalogRecord](#use-of-dcatcatalogrecord)
+  - [identifier and version identify different things](#identifier-and-version-identify-different-things)
   - [Polymorphism of PropertyValue](#polymorphism-of-propertyvalue)
 - [Namespaces](#namespaces)  
 - [Base Class DataSet](#base-class-dataset)
@@ -154,6 +155,29 @@ To address this issue, CDIF recommends that statements about the metadata record
 ```
 
 *Example: Instance with dcat CatalogRecord content (mapped to schema.org properties)*
+
+## identifier and version identify different things
+
+[↑ Back to TOC](#table-of-contents)
+
+`schema:identifier` and `schema:version` are not two granularities of the same name. They answer different questions, and a record needs both because a consumer has both.
+
+**`schema:identifier` is stable across versions.** It names the *intellectual intention* of the dataset — what it is for: its subject, its content type, its data model, its format. It is what a reader cites when they mean "the Indian Ocean radiocarbon dataset", and it should keep resolving as the data is corrected, reprocessed and reissued, because none of that changes what the dataset is *for*. A citation using it stays current without being rewritten.
+
+**`schema:version` designates a particular version, used in a particular context.** It names the exact content that went into some analysis, and therefore bears on that analysis's conclusions. Where `schema:identifier` resolves to whatever is current, a version designation must stay attached to one immutable state — if the content it names can change, a result cited against it is not reproducible.
+
+Conflating the two costs one of them:
+
+- Record only the stable identifier, and the work is not reproducible: the content moved underneath the citation, and a later reader cannot recover what was actually used.
+- Record only the version, and the reference rots: it points at a superseded snapshot when the reader wanted the dataset.
+
+So a record describing a specific revision should carry **both** — `schema:identifier` for the thing that persists, `schema:version` for the state in hand — and a consumer resolving one should not assume it has the other.
+
+Where a version needs its own *resolvable* identifier rather than a version string, give that version its own metadata record with its own `schema:identifier`, and relate the two records with `prov:wasDerivedFrom` (see the Provenance profile).
+
+CDIF does not currently define a property that marks one identifier as stable and another as version-specific, so **the distinction is carried by which property is used**, and should be stated in prose wherever a consumer might mistake one for the other.
+
+For comparison, DataONE makes the same distinction structural: every object has an immutable per-version PID, plus a `seriesId` that resolves to the current head. The DOI — the identifier humans cite — is attached to the series, not to the snapshot.
 
 ## Polymorphism of PropertyValue
 
@@ -360,7 +384,7 @@ number</td>
 
 - **Cardinality:** Required
 - **Content:** string.uri or [PropertyValue-(identifier)](#propertyvalue-identifier)
-- **Description:** The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namespace 'http://schema.org/'.
+- **Description:** The primary identifier for the described resource; other identifiers should be listed in the sameAs field. CDIF recommends that if the identifier is a resolvable URI, use the string option; if the identifier is a string that is not a resolvable URI, use the schema:PropertyValue class to provide context for interpreting the identifier. Schema.org property, in namespace 'http://schema.org/'. **This identifier is stable across versions** — it names the dataset's intellectual intention, not the particular revision in hand; see [identifier and version identify different things](#identifier-and-version-identify-different-things).
 
 ### **dateModified**
 
@@ -468,7 +492,7 @@ CHOICE at least one of two options:
 
 - **Cardinality:** Optional
 - **Content:** string or number
-- **Description:** The version number or identifier for this dataset (text or numeric). The values should sort from oldest to newest using an alphanumeric sort on version strings
+- **Description:** The version number or identifier for this dataset (text or numeric). The values should sort from oldest to newest using an alphanumeric sort on version strings. **Unlike schema:identifier, this designates one particular version** — the state that was actually used in some context, and therefore the one a reproducible result must cite; see [identifier and version identify different things](#identifier-and-version-identify-different-things).
 
 ### **inLanguage**
 
