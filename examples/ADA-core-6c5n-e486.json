@@ -134,7 +134,7 @@
         {
           "@type": [
             "ada:collection",
-            "https://schema.org/Collection",
+            "schema:Collection",
             "schema:MediaObject"
           ],
           "@id": "#c99e9e8b7640d8a8716581f30e18d861",

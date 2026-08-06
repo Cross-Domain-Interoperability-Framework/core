@@ -152,7 +152,7 @@
         {
           "@type": [
             "ada:collection",
-            "https://schema.org/Collection",
+            "schema:Collection",
             "schema:MediaObject"
           ],
           "@id": "#0f189c4c1b420753986a64c1381bc564",
